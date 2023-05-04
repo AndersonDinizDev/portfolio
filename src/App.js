@@ -3,9 +3,8 @@ import Logo from "./assets/logo.svg";
 import GitHub from "./assets/github.svg";
 import Telegram from "./assets/telegram.svg";
 import Linkedin from "./assets/linkedin.svg";
-import Banner from "./assets/banner.svg";
+import Banner from "./assets/computer.svg";
 import Aspas from "./assets/aspas.svg";
-import Seta from "./assets/seta.svg";
 
 import {
   Container,
@@ -26,9 +25,6 @@ import {
   PhraseBox,
   AutorBox,
   PhraseContent,
-  DropMenu,
-  LanguageLink,
-  LanguageUl,
 } from "./styles";
 
 const App = () => {
@@ -37,9 +33,9 @@ const App = () => {
       <Media>
         <hr />
         <div>
+        <img src={Linkedin} alt="linkedin-icon" />
           <img src={GitHub} alt="github-icon" />
           <img src={Telegram} alt="telegram-icon" />
-          <img src={Linkedin} alt="linkedin-icon" />
         </div>
       </Media>
       <ContainerItens>
@@ -71,17 +67,6 @@ const App = () => {
                 </Link>
               </li>
             </Menu>
-          </nav>
-          <nav>
-            <DropMenu>EN <img src={Seta} alt="seta-img"/></DropMenu>
-            <LanguageUl>
-              <li>
-                <LanguageLink href="#">PT-BR</LanguageLink>
-              </li>
-              <li>
-                <LanguageLink href="#">EN</LanguageLink>
-              </li>
-            </LanguageUl>
           </nav>
         </Header>
         <HomeContent>

@@ -1,4 +1,42 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+// KeyFrames - Animations
+const BlinkCursor = keyframes`
+
+from {
+  border-right-color: rgba(255, 255, 255, 0.75);
+}
+to {
+  border-right-color: transparent;
+}
+
+`
+
+const TypingWorkingText = keyframes`
+from {
+  width: 0;
+}
+to {
+  width: 289px;
+}
+`
+
+const TypingPhraseText = keyframes`
+from {
+  width: 0;
+}
+to {
+  width: 650px;
+}
+`
+const TypingAutorText = keyframes`
+from {
+  width: 0;
+}
+to {
+  width: 130px;
+}
+`
 
 export const Container = styled.div`
   background-color: #1e1e1e;
@@ -25,7 +63,6 @@ export const Media = styled.div`
   div {
     display: flex;
     flex-direction: column;
-    width: 17px;
     gap: 8px;
     margin-top: 105px;
   }
@@ -38,7 +75,12 @@ export const Media = styled.div`
   }
 
   img {
-    width: 21px;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+
+  img:hover {
+    transform: scale(1.5);
   }
 `;
 
@@ -78,6 +120,7 @@ export const Link = styled.li`
   text-decoration: none;
   cursor: pointer;
   opacity: 0.7;
+  transition: all 0.5s;
 
   span {
     color: #c778dd;
@@ -86,34 +129,6 @@ export const Link = styled.li`
   &:hover {
     opacity: 1;
   }
-`;
-
-export const DropMenu = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 3px;
-  font-family: "Fira Code";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 21px;
-  color: #abb2bf;
-`;
-
-export const LanguageNav = styled.nav`
-  width: 960px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-`;
-
-export const LanguageLink = styled.li`
-  text-decoration: none;
-`;
-
-export const LanguageUl = styled.ul`
-  list-style: none;
 `;
 
 export const HomeContent = styled.main`
@@ -166,6 +181,11 @@ export const HomeContentButton = styled.button`
   color: #ffffff;
   background-color: transparent;
   cursor: pointer;
+  transition: all 0.7s;
+
+  &:hover {
+    background: rgba(199, 120, 221, 0.2);
+  }
 `;
 
 export const HomeRightContent = styled.div`
@@ -193,6 +213,10 @@ export const HomeWorkingInfo = styled.div`
     font-size: 16px;
     line-height: 21px;
     color: #abb2bf;
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+    animation: ${BlinkCursor} 500ms steps(40) infinite, ${TypingWorkingText} 2s steps(50) 1s normal both;
+    white-space: nowrap;
+    overflow: hidden;
   }
 
   span {
@@ -229,6 +253,11 @@ export const PhraseBox = styled.div`
     font-size: 24px;
     line-height: 31px;
     color: #ffffff;
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+    animation: ${BlinkCursor} 500ms steps(40) infinite, ${TypingPhraseText} 2s steps(50) 1s normal both;
+    animation-delay: 3s;
+    white-space: nowrap;
+    overflow: hidden;
   }
 
   img {
@@ -261,6 +290,11 @@ export const AutorBox = styled.div`
     font-size: 24px;
     line-height: 31px;
     color: #ffffff;
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+    animation: ${BlinkCursor} 500ms steps(40) infinite, ${TypingAutorText} 1s steps(25) 1s normal both;
+    animation-delay: 5s;
+    white-space: nowrap;
+    overflow: hidden;
   }
 
   img {
