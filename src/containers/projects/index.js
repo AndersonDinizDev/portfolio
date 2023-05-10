@@ -1,0 +1,137 @@
+import React from "react";
+import Logo from "../../assets/logo.svg";
+import GitHub from "../../assets/github.svg";
+import Telegram from "../../assets/telegram.svg";
+import Linkedin from "../../assets/linkedin.svg";
+import GitHubBanner from "../../assets/projectbanner.svg";
+import LiveIcon from "../../assets/live.svg";
+import Repository from "../../assets/repo.svg";
+
+import {
+  Container,
+  MainContent,
+  ProjectTitle,
+  ProjectContent,
+  GitHubProjects,
+  Technologies,
+  GitHubLi,
+  GitHubInfo,
+  GitHubButtons,
+  GitHubList,
+} from "./styles";
+
+import { useHistory } from "react-router-dom";
+
+import ContainerItens from "../../components/containeritens";
+import Header from "../../components/header";
+import LogoText from "../../components/logo";
+import LinksHeader from "../../components/linksheader";
+import LinksP from "../../components/linksp";
+import Media from "../../components/media";
+import H1 from "../../components/h1";
+import P from "../../components/p";
+import Button from "../../components/button";
+import H1Animation from "../../components/h1animation";
+
+const Projects = () => {
+  const history = useHistory();
+
+  const goToHome = () => {
+    history.push("/");
+  };
+
+  const goToProjects = () => {
+    history.push("/projects");
+  };
+
+  const goToAbout = () => {
+    history.push("/about");
+  };
+
+  const goToContacts = () => {
+    history.push("/contacts");
+  };
+
+  return (
+    <Container>
+      <Media>
+        <hr />
+        <div>
+          <img src={Linkedin} alt="linkedin-icon" />
+          <img src={GitHub} alt="github-icon" />
+          <img src={Telegram} alt="telegram-icon" />
+        </div>
+      </Media>
+      <ContainerItens>
+        <Header>
+          <LogoText>
+            <img src={Logo} alt="logo-img" />
+            ANDERSON DINIZ
+          </LogoText>
+          <nav>
+            <LinksHeader>
+              <li>
+                <LinksP onClick={goToHome}>
+                  <span>#</span>home
+                </LinksP>
+              </li>
+              <li>
+                <LinksP onClick={goToProjects}>
+                  <span>#</span>projects
+                </LinksP>
+              </li>
+              <li>
+                <LinksP onClick={goToAbout}>
+                  <span>#</span>about-me
+                </LinksP>
+              </li>
+              <li>
+                <LinksP onClick={goToContacts}>
+                  <span>#</span>contacts
+                </LinksP>
+              </li>
+            </LinksHeader>
+          </nav>
+        </Header>
+        <MainContent>
+          <ProjectTitle>
+            <H1Animation bold={true}>
+              <span>/</span>projects
+            </H1Animation>
+            <P>List of my projects</P>
+          </ProjectTitle>
+          <ProjectContent>
+            <H1>
+              <span>#</span>complete-apps
+            </H1>
+            <GitHubProjects>
+              <GitHubList>
+                <GitHubLi>
+                  <img src={GitHubBanner} alt="github-banner" />
+                  <Technologies>
+                    <P isGitP={true}>HTML SCSS Python Flask</P>
+                  </Technologies>
+                  <GitHubInfo>
+                    <H1 isGitH1={true}>Kahoot !</H1>
+                    <P isGitP={true}>Get anwers to your kahoot quiz</P>
+                    <GitHubButtons>
+                      <Button>
+                        <img src={LiveIcon} alt="live-icon" /> Live
+                      </Button>
+                      <Button buttonSize={true}>
+                        <img src={Repository} alt="repo-img" />
+                        Repository
+                      </Button>
+                    </GitHubButtons>
+                  </GitHubInfo>
+                </GitHubLi>
+              </GitHubList>
+            </GitHubProjects>
+          </ProjectContent>
+        </MainContent>
+      </ContainerItens>
+    </Container>
+  );
+};
+
+export default Projects;

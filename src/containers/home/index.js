@@ -1,20 +1,14 @@
 import React from "react";
-import Logo from "./assets/logo.svg";
-import GitHub from "./assets/github.svg";
-import Telegram from "./assets/telegram.svg";
-import Linkedin from "./assets/linkedin.svg";
-import Banner from "./assets/computer.svg";
-import Aspas from "./assets/aspas.svg";
+import Logo from "../../assets/logo.svg";
+import GitHub from "../../assets/github.svg";
+import Telegram from "../../assets/telegram.svg";
+import Linkedin from "../../assets/linkedin.svg";
+import Banner from "../../assets/computer.svg";
+import Aspas from "../../assets/aspas.svg";
 
 import {
   Container,
-  Menu,
-  Link,
-  Header,
-  LogoText,
-  Media,
-  ContainerItens,
-  HomeContent,
+  MainContent,
   HomeContentH2,
   HomeContentP,
   HomeContentButton,
@@ -27,7 +21,35 @@ import {
   PhraseContent,
 } from "./styles";
 
-const App = () => {
+import { useHistory } from 'react-router-dom';
+
+import ContainerItens from "../../components/containeritens";
+import Header from "../../components/header";
+import LogoText from "../../components/logo";
+import LinksHeader from "../../components/linksheader";
+import LinksP from "../../components/linksp";
+import Media from "../../components/media";
+
+const Home = () => {
+  const history = useHistory();
+
+  const goToHome = () => {
+    history.push("/");
+  }
+
+  const goToProjects = () => {
+    history.push("/projects");
+  }
+
+  const goToAbout = () => {
+    history.push("/about");
+  }
+
+  const goToContacts = () => {
+    history.push("/contacts");
+  }
+
+
   return (
     <Container>
       <Media>
@@ -45,31 +67,31 @@ const App = () => {
             ANDERSON DINIZ
           </LogoText>
           <nav>
-            <Menu>
+            <LinksHeader>
               <li>
-                <Link href="#">
+                <LinksP onClick={goToHome}>
                   <span>#</span>home
-                </Link>
+                </LinksP>
               </li>
               <li>
-                <Link href="#">
-                  <span>#</span>works
-                </Link>
+                <LinksP onClick={goToProjects}>
+                  <span>#</span>projects
+                </LinksP>
               </li>
               <li>
-                <Link href="#">
+                <LinksP onClick={goToAbout}>
                   <span>#</span>about-me
-                </Link>
+                </LinksP>
               </li>
               <li>
-                <Link href="#">
+                <LinksP onClick={goToContacts}>
                   <span>#</span>contacts
-                </Link>
+                </LinksP>
               </li>
-            </Menu>
+            </LinksHeader>
           </nav>
         </Header>
-        <HomeContent>
+        <MainContent>
           <HomeContentLeft>
             <HomeContentH2>Anderson is a <span>full-stack developer</span>, with<br/> a focus on the <span>front-end</span></HomeContentH2>
             <HomeContentP>He crafts responsive websites where technologies meet creativity</HomeContentP>
@@ -79,7 +101,7 @@ const App = () => {
             <img src={Banner} alt="banner-img"/>
             <HomeWorkingInfo><HomeRetangle></HomeRetangle><p> Currently working on <span>Portfolio</span></p></HomeWorkingInfo>
           </HomeRightContent>
-        </HomeContent>
+        </MainContent>
         <PhraseContent>
           <div>
           <PhraseBox><img src={Aspas} alt="aspas-img"/><p>With great power comes great electricity bill</p></PhraseBox>
@@ -91,4 +113,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Home;

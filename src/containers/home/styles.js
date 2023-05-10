@@ -44,94 +44,7 @@ export const Container = styled.div`
   min-height: 100vh;
 `;
 
-export const ContainerItens = styled.div`
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-`;
-
-export const Media = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  float: left;
-  height: 300px;
-  width: 50px;
-
-  div {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    margin-top: 105px;
-  }
-
-  hr {
-    width: 191px;
-    height: 1px;
-    background: #abb2bf;
-    transform: rotate(90deg);
-  }
-
-  img {
-    transition: all 0.5s;
-    cursor: pointer;
-  }
-
-  img:hover {
-    transform: scale(1.5);
-  }
-`;
-
-export const Header = styled.header`
-  display: flex;
-  justify-content: space-around;
-  padding-top: 32px;
-  width: 100%;
-`;
-
-export const LogoText = styled.h1`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: "Fira Code";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 21px;
-  color: #ffffff;
-  gap: 8px;
-  width: 200px;
-`;
-
-export const Menu = styled.ul`
-  display: flex;
-  list-style: none;
-  gap: 30px;
-`;
-export const Link = styled.li`
-  font-family: "Fira Code";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 21px;
-  color: #ffffff;
-  text-decoration: none;
-  cursor: pointer;
-  opacity: 0.7;
-  transition: all 0.5s;
-
-  span {
-    color: #c778dd;
-  }
-
-  &:hover {
-    opacity: 1;
-  }
-`;
-
-export const HomeContent = styled.main`
+export const MainContent = styled.main`
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -214,7 +127,7 @@ export const HomeWorkingInfo = styled.div`
     line-height: 21px;
     color: #abb2bf;
     border-right: 2px solid rgba(255, 255, 255, 0.75);
-    animation: ${BlinkCursor} 500ms steps(40) infinite, ${TypingWorkingText} 2s steps(50) 1s normal both;
+    animation: ${BlinkCursor} 500ms steps(40) infinite, ${TypingWorkingText} 0.2s steps(50) 0.2s normal both;
     white-space: nowrap;
     overflow: hidden;
   }
@@ -254,8 +167,8 @@ export const PhraseBox = styled.div`
     line-height: 31px;
     color: #ffffff;
     border-right: 2px solid rgba(255, 255, 255, 0.75);
-    animation: ${BlinkCursor} 500ms steps(40) infinite, ${TypingPhraseText} 2s steps(50) 1s normal both;
-    animation-delay: 3s;
+    animation: ${BlinkCursor} 500ms steps(40) infinite, ${TypingPhraseText} 0.2s steps(50) 0.2s normal both;
+    animation-delay: 0.7s;
     white-space: nowrap;
     overflow: hidden;
   }
@@ -291,8 +204,8 @@ export const AutorBox = styled.div`
     line-height: 31px;
     color: #ffffff;
     border-right: 2px solid rgba(255, 255, 255, 0.75);
-    animation: ${BlinkCursor} 500ms steps(40) infinite, ${TypingAutorText} 1s steps(25) 1s normal both;
-    animation-delay: 5s;
+    animation: ${BlinkCursor} 500ms steps(40) infinite, ${TypingAutorText} 0.2s steps(25) 0.2s normal both;
+    animation-delay: 1s;
     white-space: nowrap;
     overflow: hidden;
   }
