@@ -33,14 +33,13 @@ margin-top: 68px;
 export const GitHubProjects = styled.div`
 display: flex;
 justify-content: center;
-flex-direction: row;
 align-items: center;
 
 `
 
 export const GitHubLi = styled.li`
 width: 330.58px;
-height: 391px;
+height: 450px;
 border: 1px solid #ABB2BF;
 background: transparent;
 margin-top: 48px;
@@ -77,7 +76,10 @@ gap: 16px;
 export const GitHubList = styled.ul`
 display: flex;
 flex-direction: row;
+justify-content: space-around;
+flex-wrap: wrap;
 gap: 16px;
+margin-bottom: 50px;
 
 `
 

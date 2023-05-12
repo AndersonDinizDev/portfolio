@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import Api from "../../services/api-github";
+
 import Logo from "../../assets/logo.svg";
 import GitHub from "../../assets/github.svg";
 import Telegram from "../../assets/telegram.svg";
 import Linkedin from "../../assets/linkedin.svg";
-import GitHubBanner from "../../assets/projectbanner.svg";
 import LiveIcon from "../../assets/live.svg";
 import Repository from "../../assets/repo.svg";
 
@@ -35,6 +36,33 @@ import H1Animation from "../../components/h1animation";
 
 const Projects = () => {
   const history = useHistory();
+  const [repo, setRepo] = useState([]);
+
+  useEffect(() => {
+    async function fetchRepoData() {
+      try {
+        const response = await Api.get(
+          "https://api.github.com/users/AndersonDinizDev/repos"
+        );
+        const filteredRepos = response.data.filter(
+          (repo) =>
+            repo.name !== "andersondinizdev" &&
+            repo.name !== "portfolio" &&
+            repo.name !== "projects-thumbnail"
+        );
+        const reposWithThumbnails = filteredRepos.map((repo) => {
+          return {
+            ...repo,
+            thumbnailUrl: `https://raw.githubusercontent.com/AndersonDinizDev/projects-thumbnail/master/${repo.name}.png`,
+          };
+        });
+        setRepo(reposWithThumbnails);
+      } catch (error) {
+        console.error(error);
+      }
+    }
+    fetchRepoData();
+  }, []);
 
   const goToHome = () => {
     history.push("/");
@@ -106,25 +134,27 @@ const Projects = () => {
             </H1>
             <GitHubProjects>
               <GitHubList>
-                <GitHubLi>
-                  <img src={GitHubBanner} alt="github-banner" />
-                  <Technologies>
-                    <P isGitP={true}>HTML SCSS Python Flask</P>
-                  </Technologies>
-                  <GitHubInfo>
-                    <H1 isGitH1={true}>Kahoot !</H1>
-                    <P isGitP={true}>Get anwers to your kahoot quiz</P>
-                    <GitHubButtons>
-                      <Button>
-                        <img src={LiveIcon} alt="live-icon" /> Live
-                      </Button>
-                      <Button buttonSize={true}>
-                        <img src={Repository} alt="repo-img" />
-                        Repository
-                      </Button>
-                    </GitHubButtons>
-                  </GitHubInfo>
-                </GitHubLi>
+                {repo.map((repository) => (
+                  <GitHubLi key={repository.id}>
+                    <img src={repository.thumbnailUrl} alt="github-banner" />
+                    <Technologies>
+                      <P isGitP={true}><span>Most used technology: </span>{repository.language}</P>
+                    </Technologies>
+                    <GitHubInfo>
+                      <H1 isGitH1={true}>{repository.name}</H1>
+                      <P isGitP={true}>{repository.description}</P>
+                      <GitHubButtons>
+                        <Button href={repository.homepage}>
+                          <img src={LiveIcon} alt="live-icon" /> Live
+                        </Button>
+                        <Button href={repository.html_url} buttonSize={true}>
+                          <img src={Repository} alt="repo-img" />
+                          Repository
+                        </Button>
+                      </GitHubButtons>
+                    </GitHubInfo>
+                  </GitHubLi>
+                ))}
               </GitHubList>
             </GitHubProjects>
           </ProjectContent>
