@@ -83,3 +83,9 @@ margin-bottom: 50px;
 
 `
 
+export const Footer = styled.footer`
+margin-top: 80px;
+width: 100%;
+height: 50px;
+`
+

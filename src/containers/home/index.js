@@ -19,6 +19,7 @@ import {
   PhraseBox,
   AutorBox,
   PhraseContent,
+  Footer,
 } from "./styles";
 
 import { useHistory } from 'react-router-dom';
@@ -29,6 +30,7 @@ import LogoText from "../../components/logo";
 import LinksHeader from "../../components/linksheader";
 import LinksP from "../../components/linksp";
 import Media from "../../components/media";
+import FooterContent from "../../components/footer";
 
 const Home = () => {
   const history = useHistory();
@@ -55,7 +57,7 @@ const Home = () => {
       <Media>
         <hr />
         <div>
-        <img src={Linkedin} alt="linkedin-icon" />
+        <img href="https://google.com" src={Linkedin} alt="linkedin-icon" />
           <img src={GitHub} alt="github-icon" />
           <img src={Telegram} alt="telegram-icon" />
         </div>
@@ -109,6 +111,11 @@ const Home = () => {
           </div>
         </PhraseContent>
       </ContainerItens>
+      <Footer>
+        <FooterContent>
+          <p>© Copyright 2023. Made by Anderson Diniz</p>
+        </FooterContent>
+        </Footer>
     </Container>
   );
 };

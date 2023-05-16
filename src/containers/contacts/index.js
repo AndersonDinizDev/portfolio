@@ -7,6 +7,7 @@ import Linkedin from "../../assets/linkedin.svg";
 import {
   Container,
   MainContent,
+  Footer,
 } from "./styles";
 
 import { useHistory } from 'react-router-dom';
@@ -17,6 +18,7 @@ import LogoText from "../../components/logo";
 import LinksHeader from "../../components/linksheader";
 import LinksP from "../../components/linksp";
 import Media from "../../components/media";
+import FooterContent from "../../components/footer";
 
 const About = () => {
   const history = useHistory();
@@ -82,6 +84,11 @@ const About = () => {
         <MainContent>
         </MainContent>
       </ContainerItens>
+      <Footer>
+      <FooterContent>
+          <p>© Copyright 2023. Made by Anderson Diniz</p>
+        </FooterContent>
+        </Footer>
     </Container>
   );
 };

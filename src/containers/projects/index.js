@@ -19,6 +19,7 @@ import {
   GitHubInfo,
   GitHubButtons,
   GitHubList,
+  Footer,
 } from "./styles";
 
 import { useHistory } from "react-router-dom";
@@ -33,6 +34,7 @@ import H1 from "../../components/h1";
 import P from "../../components/p";
 import Button from "../../components/button";
 import H1Animation from "../../components/h1animation";
+import FooterContent from "../../components/footer";
 
 const Projects = () => {
   const history = useHistory();
@@ -160,6 +162,11 @@ const Projects = () => {
           </ProjectContent>
         </MainContent>
       </ContainerItens>
+      <Footer>
+        <FooterContent>
+          <p>© Copyright 2023. Made by Anderson Diniz</p>
+        </FooterContent>
+        </Footer>
     </Container>
   );
 };
