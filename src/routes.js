@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./containers/home";
 import Projects from "./containers/projects";
 import About from "./containers/about"
-import Contacts from "./containers/about";
+import Contacts from "./containers/contacts";
 
 const Routes = () => {
   return (

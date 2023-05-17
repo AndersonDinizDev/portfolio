@@ -16,7 +16,7 @@ from {
   width: 0;
 }
 to {
-  width: 175px;
+  width: ${props => props.isSkillsH1 ? '120px' : '175px'};
 }
 `
 
