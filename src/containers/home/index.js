@@ -5,6 +5,7 @@ import Telegram from "../../assets/telegram.svg";
 import Linkedin from "../../assets/linkedin.svg";
 import Banner from "../../assets/computer.svg";
 import Aspas from "../../assets/aspas.svg";
+import Curriculum from "../../assets/curriculum.svg";
 
 import {
   Container,
@@ -98,7 +99,7 @@ const Home = () => {
           <HomeContentLeft>
             <HomeContentH2>Anderson is a <span>full-stack developer</span>, with<br/> a focus on the <span>front-end</span></HomeContentH2>
             <HomeContentP>He crafts responsive websites where technologies meet creativity</HomeContentP>
-            <Button isDownloadCv={true} href="https://drive.google.com/file/d/1CgW14hWZIV5TjydmRcMqP5lJbOQDEBKR/view">Download CV</Button>
+            <Button icon={Curriculum} isDownloadCv={true} href="https://drive.google.com/file/d/1CgW14hWZIV5TjydmRcMqP5lJbOQDEBKR/view">Download CV</Button>
             </HomeContentLeft>
           <HomeRightContent>
             <img src={Banner} alt="banner-img"/>

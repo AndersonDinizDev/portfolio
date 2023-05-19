@@ -20,6 +20,7 @@ import {
   GitHubButtons,
   GitHubList,
   Footer,
+  CompleteProjectTitle,
 } from "./styles";
 
 import { useHistory } from "react-router-dom";
@@ -132,16 +133,19 @@ const Projects = () => {
             <P>List of my projects</P>
           </ProjectTitle>
           <ProjectContent>
+            <CompleteProjectTitle>
             <H1>
               <span>#</span>complete-apps
             </H1>
+            <hr/>
+            </CompleteProjectTitle>
             <GitHubProjects>
               <GitHubList>
                 {repo.map((repository) => (
                   <GitHubLi key={repository.id}>
                     <img src={repository.thumbnailUrl} alt="github-banner" />
                     <Technologies>
-                      <P isGitP={true}><span>Most used technology: </span>{repository.language}</P>
+                      <P isGitPTech={true}><span>Most used technology: </span>{repository.language}</P>
                     </Technologies>
                     <GitHubInfo>
                       <H1 isGitH1={true}>{repository.name}</H1>

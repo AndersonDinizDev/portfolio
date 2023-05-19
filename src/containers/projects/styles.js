@@ -22,6 +22,20 @@ export const ProjectTitle = styled.div`
 
 `
 
+export const CompleteProjectTitle = styled.div`
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+width: 100%;
+
+hr {
+  width: 72%;
+  margin-left: 20px;
+  border-color: #C778DD;
+}
+`
+
 export const ProjectContent = styled.div`
 display: flex;
 flex-direction: column;
