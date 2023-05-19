@@ -9,7 +9,6 @@ import SkillsImg from "../../assets/skillsimg.svg";
 
 import {
   Container,
-  MainContent,
   Footer,
   AboutTitle,
   AboutContent,
@@ -38,6 +37,7 @@ import P from "../../components/p";
 import SkillsCard from "../../components/skillscard";
 import H1 from "../../components/h1";
 import MediaButton from "../../components/mediabutton";
+import MainContent from "../../components/maincontent";
 
 const Contacts = () => {
   const history = useHistory();

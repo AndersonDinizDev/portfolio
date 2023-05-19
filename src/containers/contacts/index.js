@@ -8,7 +8,6 @@ import Tel from "../../assets/tel.svg";
 
 import {
   Container,
-  MainContent,
   Footer,
   ContactTitle,
   ContactContent,
@@ -29,6 +28,7 @@ import H1Animation from "../../components/h1animation";
 import P from "../../components/p";
 import SkillsCard from "../../components/skillscard";
 import MediaButton from "../../components/mediabutton";
+import MainContent from "../../components/maincontent";
 
 const About = () => {
   const history = useHistory();

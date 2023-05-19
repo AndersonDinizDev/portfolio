@@ -6,14 +6,6 @@ export const Container = styled.div`
   min-height: 100vh;
 `;
 
-export const MainContent = styled.main`
-  display: flex;
-  flex-direction: column;
-  width: 63%;
-  margin-top: 62px;
-  align-items: baseline;
-`;
-
 export const AboutTitle = styled.div`
   display: flex;
   flex-direction: column;

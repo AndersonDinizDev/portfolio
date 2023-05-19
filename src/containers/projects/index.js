@@ -10,7 +10,6 @@ import Repository from "../../assets/repo.svg";
 
 import {
   Container,
-  MainContent,
   ProjectTitle,
   ProjectContent,
   GitHubProjects,
@@ -37,6 +36,7 @@ import Button from "../../components/button";
 import H1Animation from "../../components/h1animation";
 import FooterContent from "../../components/footer";
 import MediaButton from "../../components/mediabutton";
+import MainContent from "../../components/maincontent";
 
 const Projects = () => {
   const history = useHistory();
@@ -125,7 +125,7 @@ const Projects = () => {
             </LinksHeader>
           </nav>
         </Header>
-        <MainContent>
+        <MainContent isProjectMainContent={true}>
           <ProjectTitle>
             <H1Animation bold={true}>
               <span>/</span>projects

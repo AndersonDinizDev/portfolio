@@ -9,7 +9,6 @@ import Curriculum from "../../assets/curriculum.svg";
 
 import {
   Container,
-  MainContent,
   HomeContentH2,
   HomeContentP,
   HomeContentLeft,
@@ -34,6 +33,7 @@ import Media from "../../components/media";
 import FooterContent from "../../components/footer";
 import Button from "../../components/button";
 import MediaButton from "../../components/mediabutton";
+import MainContent from "../../components/maincontent";
 
 const Home = () => {
   const history = useHistory();
@@ -96,7 +96,7 @@ const Home = () => {
             </LinksHeader>
           </nav>
         </Header>
-        <MainContent>
+        <MainContent isHomeMainContent={true}>
           <HomeContent>
           <HomeContentLeft>
             <HomeContentH2>Anderson is a <span>full-stack developer</span>, with<br/> a focus on the <span>front-end</span></HomeContentH2>
