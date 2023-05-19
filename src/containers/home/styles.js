@@ -46,11 +46,19 @@ export const Container = styled.div`
 
 export const MainContent = styled.main`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 62px;
 `;
+
+export const HomeContent = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+`
 
 export const HomeContentLeft = styled.div`
   display: flex;

@@ -18,6 +18,7 @@ import {
   HomeRightContent,
   PhraseBox,
   AutorBox,
+  HomeContent,
   PhraseContent,
   Footer,
 } from "./styles";
@@ -96,6 +97,7 @@ const Home = () => {
           </nav>
         </Header>
         <MainContent>
+          <HomeContent>
           <HomeContentLeft>
             <HomeContentH2>Anderson is a <span>full-stack developer</span>, with<br/> a focus on the <span>front-end</span></HomeContentH2>
             <HomeContentP>He crafts responsive websites where technologies meet creativity</HomeContentP>
@@ -105,13 +107,14 @@ const Home = () => {
             <img src={Banner} alt="banner-img"/>
             <HomeWorkingInfo><HomeRetangle></HomeRetangle><p> Currently working on <span>Portfolio</span></p></HomeWorkingInfo>
           </HomeRightContent>
-        </MainContent>
-        <PhraseContent>
+          </HomeContent>
+          <PhraseContent>
           <div>
           <PhraseBox><img src={Aspas} alt="aspas-img"/><p>With great power comes great electricity bill</p></PhraseBox>
           <AutorBox><img src={Aspas} alt="aspas-img"/><p>- Dr. Who</p></AutorBox>
           </div>
         </PhraseContent>
+        </MainContent>
       </ContainerItens>
       <Footer>
         <FooterContent>
