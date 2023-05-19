@@ -4,7 +4,8 @@ export const Button = styled.button`
 display: flex;
 justify-content: center;
 align-items: center;
-width:  ${props => props.buttonSize ? '140px' : '109px'};
+width:  ${props => props.buttonSize ? '145px' : '109px'};
+width:  ${props => props.isDownloadCv ? '150px' : ''};
 height: 37px;
 border: 1px solid #C778DD;
 font-family: 'Fira Code';
@@ -17,12 +18,13 @@ outline: none;
 background: transparent;
 gap: 5px;
 cursor: pointer;
+transition: 0.7s;
 
 &:hover {
     background: rgba(199, 120, 221, 0.2);
   }
 
-img {
-    width: 25px;
+  img {
+    width: 20px;
 }
 `

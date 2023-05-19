@@ -36,7 +36,8 @@ import FooterContent from "../../components/footer";
 import H1Animation from "../../components/h1animation";
 import P from "../../components/p";
 import SkillsCard from "../../components/skillscard";
-import H1 from "../../components/h1"
+import H1 from "../../components/h1";
+import MediaButton from "../../components/mediabutton";
 
 const Contacts = () => {
   const history = useHistory();
@@ -62,9 +63,9 @@ const Contacts = () => {
       <Media>
         <hr />
         <div>
-          <img src={Linkedin} alt="linkedin-icon" />
-          <img src={GitHub} alt="github-icon" />
-          <img src={Telegram} alt="telegram-icon" />
+        <MediaButton href="https://www.linkedin.com/in/andersonldiniz/"><img src={Linkedin} alt="linkedin-icon" /></MediaButton>
+        <MediaButton href="https://github.com/andersondinizdev"><img src={GitHub} alt="github-icon" /></MediaButton>
+        <MediaButton href="https://t.me/andersondiniz159"><img src={Telegram} alt="telegram-icon" /></MediaButton>
         </div>
       </Media>
       <ContainerItens>

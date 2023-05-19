@@ -11,7 +11,6 @@ import {
   MainContent,
   HomeContentH2,
   HomeContentP,
-  HomeContentButton,
   HomeContentLeft,
   HomeRetangle,
   HomeWorkingInfo,
@@ -31,6 +30,8 @@ import LinksHeader from "../../components/linksheader";
 import LinksP from "../../components/linksp";
 import Media from "../../components/media";
 import FooterContent from "../../components/footer";
+import Button from "../../components/button";
+import MediaButton from "../../components/mediabutton";
 
 const Home = () => {
   const history = useHistory();
@@ -57,9 +58,9 @@ const Home = () => {
       <Media>
         <hr />
         <div>
-        <img href="https://google.com" src={Linkedin} alt="linkedin-icon" />
-          <img src={GitHub} alt="github-icon" />
-          <img src={Telegram} alt="telegram-icon" />
+        <MediaButton href="https://www.linkedin.com/in/andersonldiniz/"><img src={Linkedin} alt="linkedin-icon" /></MediaButton>
+        <MediaButton href="https://github.com/andersondinizdev"><img src={GitHub} alt="github-icon" /></MediaButton>
+        <MediaButton href="https://t.me/andersondiniz159"><img src={Telegram} alt="telegram-icon" /></MediaButton>
         </div>
       </Media>
       <ContainerItens>
@@ -97,7 +98,7 @@ const Home = () => {
           <HomeContentLeft>
             <HomeContentH2>Anderson is a <span>full-stack developer</span>, with<br/> a focus on the <span>front-end</span></HomeContentH2>
             <HomeContentP>He crafts responsive websites where technologies meet creativity</HomeContentP>
-            <HomeContentButton>Contact me !!</HomeContentButton>
+            <Button isDownloadCv={true} href="https://drive.google.com/file/d/1CgW14hWZIV5TjydmRcMqP5lJbOQDEBKR/view">Download CV</Button>
             </HomeContentLeft>
           <HomeRightContent>
             <img src={Banner} alt="banner-img"/>
