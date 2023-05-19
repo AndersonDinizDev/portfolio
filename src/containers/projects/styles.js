@@ -89,8 +89,3 @@ width: 100%;
 height: 50px;
 `
 
-export const ImgCard = styled.img`
-    width: 20px;
-
-`
-

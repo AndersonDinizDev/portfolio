@@ -147,11 +147,9 @@ const Projects = () => {
                       <H1 isGitH1={true}>{repository.name}</H1>
                       <P isGitP={true}>{repository.description}</P>
                       <GitHubButtons>
-                        <Button href={repository.homepage}>
-                          <img src={LiveIcon} alt="live-icon" /> Live
+                        <Button href={repository.homepage} icon={LiveIcon}> Live
                         </Button>
-                        <Button href={repository.html_url} buttonSize={true}>
-                          <img src={Repository} alt="repo-img" />
+                        <Button href={repository.html_url} buttonSize={true} icon={Repository}>
                           Repository
                         </Button>
                       </GitHubButtons>
