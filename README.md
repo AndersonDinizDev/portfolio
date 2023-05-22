@@ -20,7 +20,7 @@
  </p>
 
 ## ✨ Features:
-- [x] Add connection with API;
+- [x] Add connection with GitHub API;
 - [x] Add Framer-Motion animation;
 - [ ] Add Responsive
 
@@ -44,9 +44,13 @@ The following tools were used in this project:
 
 ```bash
 # Clone this project
-$ git clone https://github.com/andersondinizdev/convert-money.git
+$ git clone https://github.com/andersondinizdev/portfolio.git
 # Access
 $ cd convert-money
-# The server will initialize in the <http://127.0.0.1:5500l>
+# open the terminal and type
+$ npm i or npm install
+# start the project
+$ yarn start
+# The server will initialize in the <http://127.0.0.1:3000>
 ```
 [⬆ Voltar ao topo](#convert-money)<br>
