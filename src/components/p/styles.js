@@ -11,8 +11,12 @@ color: ${props => props.isGitP ? '#ABB2BF' : ''};
 color: ${props => props.isGitPTech ? '#ABB2BF' : ''};
 color: ${props => props.isAboutP ? '#ABB2BF' : ''};
 color: ${props => props.isContactP ? '#ABB2BF' : ''};
+color: ${props => props.isContactLeftP ? '#ABB2BF' : ''};
+width: ${props => props.isContactLeftP ? '500px' : ''};
 padding-left: ${props => props.isAboutP ? '5px' : ''};
 display: ${props => props.isContactP ? 'flex' : ''};
+display: ${props => props.isContactLeftP ? 'flex' : ''};
 align-items: ${props => props.isContactP ? 'center' : ''};
+align-items: ${props => props.isContactLeftP  ? 'center' : ''};
 margin-top: ${props => props.isGitP ? '16px' : ''};
 `

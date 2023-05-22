@@ -12,6 +12,7 @@ import {
   Footer,
   AboutTitle,
   AboutContent,
+  AboutCentralContainer,
   AboutContentLeft,
   AboutContentRight,
   SkillsTitle,
@@ -99,14 +100,15 @@ const Contacts = () => {
             </LinksHeader>
           </nav>
         </Header>
-        <MainContent>
+        <MainContent isAboutContent={true}>
+          <AboutContent>
           <AboutTitle>
             <H1Animation bold={true}>
               <span>/</span>about-me
             </H1Animation>
             <P>Who am i?</P>
           </AboutTitle>
-          <AboutContent>
+          <AboutCentralContainer>
             <AboutContentLeft>
               <p>
                 Hello, i'm Anderson! I'm a full-stack developer based in Rio de
@@ -121,8 +123,8 @@ const Contacts = () => {
             <AboutContentRight>
               <img src={AboutImage} alt="about-img"/>
             </AboutContentRight>
-          </AboutContent>
-          <SkillsTitle>
+            </AboutCentralContainer>
+            <SkillsTitle>
             <H1Animation bold={true} isSkillsH1={true}>
               <span>/</span>skills
             </H1Animation>
@@ -168,6 +170,7 @@ const Contacts = () => {
             </FunFactsLeft>
             <div><img src={FunFacts} alt="funfacts-img"/></div>
           </FunFactsContent>
+          </AboutContent>
         </MainContent>
       </ContainerItens>
       <Footer>

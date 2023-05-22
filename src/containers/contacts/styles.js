@@ -6,12 +6,11 @@ export const Container = styled.div`
   min-height: 100vh;
 `;
 
-export const Footer = styled.footer`
-  margin-top: 80px;
+export const ContactContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
   width: 100%;
-  height: 50px;
-  bottom: 0;
-  position: fixed;
 `;
 
 export const ContactTitle = styled.div`
@@ -19,20 +18,26 @@ export const ContactTitle = styled.div`
   flex-direction: column;
 `;
 
-export const ContactContent = styled.div`
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  margin-top: 68px;
-`;
+export const ContactContentCentral = styled.div`
+display: flex;
+width: 100%;
+justify-content: space-between;
+
+`
 
 export const ContactContentLeft = styled.div`
-display: flex;
-width: 600px;
-
-`
+  display: flex;
+  width: 600px;
+`;
 
 export const ContactContentRight = styled.div`
-display: flex;
+  display: flex;
+`;
 
-`
+export const Footer = styled.footer`
+  margin-top: 80px;
+  width: 100%;
+  height: 50px;
+  bottom: 0;
+  position: fixed;
+`;

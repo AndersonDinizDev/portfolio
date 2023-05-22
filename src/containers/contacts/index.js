@@ -11,6 +11,7 @@ import {
   Footer,
   ContactTitle,
   ContactContent,
+  ContactContentCentral,
   ContactContentLeft,
   ContactContentRight,
 } from "./styles";
@@ -91,15 +92,16 @@ const About = () => {
           </nav>
         </Header>
         <MainContent>
+          <ContactContent>
           <ContactTitle>
             <H1Animation bold={true}>
               <span>/</span>contacts
             </H1Animation>
             <P>Who am i?</P>
           </ContactTitle>
-          <ContactContent>
+          <ContactContentCentral>
             <ContactContentLeft>
-              <P isContactP={true}>
+              <P isContactLeftP={true}>
                 I am looking for an opportunity to join the IT field. However,
                 if you have another request or question, please don't hesitate
                 to contact me.
@@ -112,6 +114,7 @@ const About = () => {
                 <P isContactP={true}><img src={Email} alt="email-img"/> andersondiniz159@gmail.com</P>
               </SkillsCard>
             </ContactContentRight>
+            </ContactContentCentral>
           </ContactContent>
         </MainContent>
       </ContainerItens>

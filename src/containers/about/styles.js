@@ -6,23 +6,24 @@ export const Container = styled.div`
   min-height: 100vh;
 `;
 
+export const AboutContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  width: 80%;
+`;
+
 export const AboutTitle = styled.div`
   display: flex;
   flex-direction: column;
 `;
 
-export const Footer = styled.footer`
-  margin-top: 80px;
-  width: 100%;
-  height: 50px;
-`;
+export const AboutCentralContainer = styled.div`
+display: flex;
+justify-content: space-between;
+width: 100%;
+`
 
-export const AboutContent = styled.div`
-  display: flex;
-  margin-top: 68px;
-  justify-content: space-between;
-  width: 100%;
-`;
 export const AboutContentLeft = styled.div`
   display: flex;
   justify-content: center;
@@ -82,4 +83,10 @@ export const FunFactsLeft = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 5px;
+`;
+
+export const Footer = styled.footer`
+  margin-top: 80px;
+  width: 100%;
+  height: 50px;
 `;

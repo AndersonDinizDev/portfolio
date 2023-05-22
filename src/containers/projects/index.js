@@ -125,14 +125,14 @@ const Projects = () => {
             </LinksHeader>
           </nav>
         </Header>
-        <MainContent isProjectMainContent={true}>
+        <MainContent>
+          <ProjectContent>
           <ProjectTitle>
             <H1Animation bold={true}>
               <span>/</span>projects
             </H1Animation>
             <P>List of my projects</P>
           </ProjectTitle>
-          <ProjectContent>
             <CompleteProjectTitle>
             <H1>
               <span>#</span>complete-apps
