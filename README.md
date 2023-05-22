@@ -16,7 +16,7 @@
 </p>
 
 <p align="center">
-<img src="/assets/print.gif" alt="exemplo imagem"/>
+<img src="https://raw.githubusercontent.com/AndersonDinizDev/projects-thumbnail/master/portfolio.png" alt="exemplo imagem"/>
  </p>
 
 ## ✨ Features:
