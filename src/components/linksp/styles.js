@@ -11,6 +11,7 @@ export const LinksP = styled.p`
   cursor: pointer;
   opacity: 0.7;
   transition: all 0.5s;
+  position: relative;
 
   span {
     color: #c778dd;
@@ -18,5 +19,20 @@ export const LinksP = styled.p`
 
   &:hover {
     opacity: 1;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: #c778dd;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+  }
+
+  &:hover::after {
+    width: 100%;
   }
 `;
