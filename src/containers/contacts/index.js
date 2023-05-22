@@ -16,7 +16,7 @@ import {
   ContactContentRight,
 } from "./styles";
 
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 import ContainerItens from "../../components/containeritens";
 import Header from "../../components/header";
@@ -32,23 +32,23 @@ import MediaButton from "../../components/mediabutton";
 import MainContent from "../../components/maincontent";
 
 const About = () => {
-  const history = useHistory();
+  const navigate = useNavigate();
 
   const goToHome = () => {
-    history.push("/");
-  };
+    navigate("/");
+  }
 
   const goToProjects = () => {
-    history.push("/projects");
-  };
+    navigate("/projects");
+  }
 
   const goToAbout = () => {
-    history.push("/about");
-  };
+    navigate("/about");
+  }
 
   const goToContacts = () => {
-    history.push("/contacts");
-  };
+    navigate("/contacts");
+  }
 
   return (
     <Container>

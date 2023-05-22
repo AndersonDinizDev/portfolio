@@ -1,5 +1,5 @@
 import React from "react";
-import { motion, AnimatePresence } from "framer-motion/dist/framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 
 import { MainContent as MainContentComponent } from "./styles";
 

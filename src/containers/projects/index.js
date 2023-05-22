@@ -22,7 +22,7 @@ import {
   CompleteProjectTitle,
 } from "./styles";
 
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 import ContainerItens from "../../components/containeritens";
 import Header from "../../components/header";
@@ -39,7 +39,7 @@ import MediaButton from "../../components/mediabutton";
 import MainContent from "../../components/maincontent";
 
 const Projects = () => {
-  const history = useHistory();
+  const navigate = useNavigate();
   const [repo, setRepo] = useState([]);
 
   useEffect(() => {
@@ -67,22 +67,22 @@ const Projects = () => {
     }
     fetchRepoData();
   }, []);
-
-  const goToHome = () => {
-    history.push("/");
-  };
-
-  const goToProjects = () => {
-    history.push("/projects");
-  };
-
-  const goToAbout = () => {
-    history.push("/about");
-  };
-
-  const goToContacts = () => {
-    history.push("/contacts");
-  };
+  
+    const goToHome = () => {
+      navigate("/");
+    }
+  
+    const goToProjects = () => {
+      navigate("/projects");
+    }
+  
+    const goToAbout = () => {
+      navigate("/about");
+    }
+  
+    const goToContacts = () => {
+      navigate("/contacts");
+    }
 
   return (
     <Container>
