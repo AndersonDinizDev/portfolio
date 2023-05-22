@@ -1,4 +1,7 @@
 import React from "react";
+import { useNavigate } from 'react-router-dom';
+import { useTypewriter, Cursor } from "react-simple-typewriter";
+
 import Logo from "../../assets/logo.svg";
 import GitHub from "../../assets/github.svg";
 import Telegram from "../../assets/telegram.svg";
@@ -21,8 +24,6 @@ import {
   PhraseContent,
   Footer,
 } from "./styles";
-
-import { useNavigate } from 'react-router-dom';
 
 import ContainerItens from "../../components/containeritens";
 import Header from "../../components/header";
@@ -53,6 +54,13 @@ const Home = () => {
   const goToContacts = () => {
     navigate("/contacts");
   }
+
+  const [text] = useTypewriter({
+    words: ['Currently working on portfólio', 'Currently studying C# and Javascript'],
+    loop: {},
+    typeSpeed: 50,
+    deleteSpeed: 50,
+  })
 
 
   return (
@@ -105,7 +113,7 @@ const Home = () => {
             </HomeContentLeft>
           <HomeRightContent>
             <img src={Banner} alt="banner-img"/>
-            <HomeWorkingInfo><HomeRetangle></HomeRetangle><p> Currently working on <span>Portfolio</span></p></HomeWorkingInfo>
+            <HomeWorkingInfo><HomeRetangle></HomeRetangle><p>{text}<span><Cursor/></span></p></HomeWorkingInfo>
           </HomeRightContent>
           </HomeContent>
           <PhraseContent>

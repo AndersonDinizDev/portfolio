@@ -12,15 +12,6 @@ to {
 
 `
 
-const TypingWorkingText = keyframes`
-from {
-  width: 0;
-}
-to {
-  width: 289px;
-}
-`
-
 const TypingPhraseText = keyframes`
 from {
   width: 0;
@@ -126,14 +117,12 @@ export const HomeWorkingInfo = styled.div`
     font-size: 16px;
     line-height: 21px;
     color: #abb2bf;
-    border-right: 2px solid rgba(255, 255, 255, 0.75);
-    animation: ${BlinkCursor} 500ms steps(40) infinite, ${TypingWorkingText} 0.2s steps(50) 0.2s normal both;
     white-space: nowrap;
     overflow: hidden;
   }
 
   span {
-    color: #ffffff;
+    color: #c778dd;
   }
 `;
 
