@@ -46,7 +46,7 @@ The following tools were used in this project:
 # Clone this project
 $ git clone https://github.com/andersondinizdev/portfolio.git
 # Access
-$ cd convert-money
+$ cd portfolio
 # open the terminal and type
 $ npm i or npm install
 # start the project
