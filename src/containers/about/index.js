@@ -22,6 +22,7 @@ import {
   FunFactsLeft,
   SkillsLeft,
   SkillsRight,
+  Retangle,
 } from "./styles";
 
 import { useNavigate } from "react-router-dom";
@@ -39,6 +40,8 @@ import SkillsCard from "../../components/skillscard";
 import H1 from "../../components/h1";
 import MediaButton from "../../components/mediabutton";
 import MainContent from "../../components/maincontent";
+import PAnimated from "../../components/panimated";
+import StatusCard from "../../components/statuscard";
 
 const Contacts = () => {
   const navigate = useNavigate();
@@ -122,6 +125,7 @@ const Contacts = () => {
             </AboutContentLeft>
             <AboutContentRight>
               <img src={AboutImage} alt="about-img"/>
+              <StatusCard><Retangle></Retangle><PAnimated isAboutPAnimated={true}> Full-Stack Developer</PAnimated></StatusCard>
             </AboutContentRight>
             </AboutCentralContainer>
             <SkillsTitle>

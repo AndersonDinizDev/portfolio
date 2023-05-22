@@ -41,6 +41,13 @@ export const AboutContentLeft = styled.div`
 
 export const AboutContentRight = styled.div``;
 
+export const Retangle = styled.div`
+  width: 16px;
+  height: 16px;
+  background: #c778dd;
+  border: 1px solid #c778dd;
+`;
+
 export const SkillsTitle = styled.div`
   display: flex;
   margin-top: 112px;
