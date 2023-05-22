@@ -97,7 +97,7 @@ const About = () => {
             <H1Animation bold={true}>
               <span>/</span>contacts
             </H1Animation>
-            <P>Who am i?</P>
+            <P>Talk to me</P>
           </ContactTitle>
           <ContactContentCentral>
             <ContactContentLeft>

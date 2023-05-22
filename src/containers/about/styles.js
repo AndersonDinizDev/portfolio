@@ -36,6 +36,7 @@ export const AboutContentLeft = styled.div`
     line-height: 25px;
     color: #abb2bf;
     width: 515px;
+    text-justify: auto;
   }
 `;
 

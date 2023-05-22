@@ -77,8 +77,8 @@ export const GitHubButtons = styled.div`
 export const GitHubList = styled.ul`
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 16px;
   margin-bottom: 50px;
 `;

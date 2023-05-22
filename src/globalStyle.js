@@ -22,7 +22,6 @@ body::-webkit-scrollbar-thumb {
 
 }
 
-
 `
 
 export default GlobalStyle;

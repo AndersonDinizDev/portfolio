@@ -31,9 +31,9 @@ import LinksHeader from "../../components/linksheader";
 import LinksP from "../../components/linksp";
 import Media from "../../components/media";
 import FooterContent from "../../components/footer";
-import Button from "../../components/button";
 import MediaButton from "../../components/mediabutton";
 import MainContent from "../../components/maincontent";
+import ButtonAnimated from "../../components/buttonanimated";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -99,9 +99,9 @@ const Home = () => {
         <MainContent isHomeMainContent={true}>
           <HomeContent>
           <HomeContentLeft>
-            <HomeContentH2>Anderson is a <span>full-stack developer</span>, with<br/> a focus on the <span>front-end</span></HomeContentH2>
-            <HomeContentP>He crafts responsive websites where technologies meet creativity</HomeContentP>
-            <Button icon={Curriculum} isDownloadCv={true} href="https://drive.google.com/file/d/1CgW14hWZIV5TjydmRcMqP5lJbOQDEBKR/view">Download CV</Button>
+            <HomeContentH2>Anderson Diniz <span>full-stack developer</span>, with<br/> a focus on the <span>front-end</span></HomeContentH2>
+            <HomeContentP>Creating responsive websites where technology meets creativity.</HomeContentP>
+            <ButtonAnimated icon={Curriculum} isDownloadCv={true} href="https://drive.google.com/file/d/1CgW14hWZIV5TjydmRcMqP5lJbOQDEBKR/view">Download CV</ButtonAnimated>
             </HomeContentLeft>
           <HomeRightContent>
             <img src={Banner} alt="banner-img"/>
