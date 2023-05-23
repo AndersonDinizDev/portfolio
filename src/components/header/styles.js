@@ -5,4 +5,12 @@ export const Header = styled.header`
   justify-content: space-around;
   padding-top: 32px;
   width: 100%;
+
+  @media screen {
+    
+    max-width: 767px;
+    justify-content: center;
+    flex-direction: column;
+    
+    }
 `;

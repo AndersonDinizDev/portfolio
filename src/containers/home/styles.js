@@ -41,12 +41,25 @@ export const HomeContent = styled.div`
   justify-content: center;
   align-items: center;
 
+  @media screen {
+    
+    max-width: 768px;
+    flex-direction: column;
+  }
+
 `
 
 export const HomeContentLeft = styled.div`
   display: flex;
   flex-direction: column;
   gap: 24px;
+
+  @media screen {
+    
+    max-width: 767px;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 export const HomeContentH2 = styled.h2`
@@ -60,6 +73,12 @@ export const HomeContentH2 = styled.h2`
   span {
     color: #c778dd;
   }
+
+  @media screen {
+
+    max-width: 767px;
+    width: 328px;
+  }
 `;
 
 export const HomeContentP = styled.p`
@@ -69,6 +88,11 @@ export const HomeContentP = styled.p`
   font-size: 16px;
   line-height: 25px;
   color: #abb2bf;
+
+  @media screen {
+    max-width: 767px;
+    width: 328px;
+  }
 `;
 
 export const HomeContentButton = styled.button`
@@ -97,6 +121,14 @@ export const HomeRightContent = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media screen {
+    max-width: 767px;
+
+    img {
+      width: 65%;
+    }
+  }
 `;
 
 export const HomeWorkingInfo = styled.div`
@@ -124,6 +156,15 @@ export const HomeWorkingInfo = styled.div`
   span {
     color: #c778dd;
   }
+
+  @media screen {
+    max-width: 768px;
+    width: 380px;
+
+    p {
+      font-size: 15px;
+    }
+  }
 `;
 
 export const HomeRetangle = styled.div`
@@ -137,6 +178,11 @@ export const PhraseContent = styled.div`
   margin-top: 112px;
   display: flex;
   justify-content: space-between;
+
+  @media screen {
+     max-width: 767px;
+     display: none;
+  }
 `;
 
 export const PhraseBox = styled.div`
@@ -214,4 +260,10 @@ export const Footer = styled.footer`
 margin-top: 80px;
 width: 100%;
 height: 50px;
+
+@media screen {
+  max-width: 767px;
+  margin-top: 50px;
+  
+}
 `
