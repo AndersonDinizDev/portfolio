@@ -6,11 +6,8 @@ export const Header = styled.header`
   padding-top: 32px;
   width: 100%;
 
-  @media screen {
-    
-    max-width: 767px;
+  @media (max-width: 767px) {
     justify-content: center;
     flex-direction: column;
-    
-    }
+  }
 `;

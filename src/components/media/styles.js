@@ -32,13 +32,7 @@ export const Media = styled.div`
     transform: scale(1.5);
   }
 
-  @media screen {
-    
-    max-width: 767px;
+  @media (max-width: 767px) {
     display: none;
   }
-
-
-    
-
 `;

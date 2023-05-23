@@ -10,7 +10,7 @@ to {
   border-right-color: transparent;
 }
 
-`
+`;
 
 const TypingPhraseText = keyframes`
 from {
@@ -19,7 +19,7 @@ from {
 to {
   width: 650px;
 }
-`
+`;
 const TypingAutorText = keyframes`
 from {
   width: 0;
@@ -27,7 +27,7 @@ from {
 to {
   width: 130px;
 }
-`
+`;
 
 export const Container = styled.div`
   background-color: #1e1e1e;
@@ -41,22 +41,17 @@ export const HomeContent = styled.div`
   justify-content: center;
   align-items: center;
 
-  @media screen {
-    
-    max-width: 768px;
+  @media (max-width: 767px) {
     flex-direction: column;
   }
-
-`
+`;
 
 export const HomeContentLeft = styled.div`
   display: flex;
   flex-direction: column;
   gap: 24px;
 
-  @media screen {
-    
-    max-width: 767px;
+  @media (max-width: 767px) {
     justify-content: center;
     align-items: center;
   }
@@ -74,9 +69,7 @@ export const HomeContentH2 = styled.h2`
     color: #c778dd;
   }
 
-  @media screen {
-
-    max-width: 767px;
+  @media (max-width: 767px) {
     width: 328px;
   }
 `;
@@ -89,8 +82,7 @@ export const HomeContentP = styled.p`
   line-height: 25px;
   color: #abb2bf;
 
-  @media screen {
-    max-width: 767px;
+  @media (max-width: 767px) {
     width: 328px;
   }
 `;
@@ -122,9 +114,7 @@ export const HomeRightContent = styled.div`
   justify-content: center;
   align-items: center;
 
-  @media screen {
-    max-width: 767px;
-
+  @media (max-width: 767px) {
     img {
       width: 65%;
     }
@@ -157,8 +147,7 @@ export const HomeWorkingInfo = styled.div`
     color: #c778dd;
   }
 
-  @media screen {
-    max-width: 768px;
+  @media (max-width: 768px) {
     width: 380px;
 
     p {
@@ -179,9 +168,8 @@ export const PhraseContent = styled.div`
   display: flex;
   justify-content: space-between;
 
-  @media screen {
-     max-width: 767px;
-     display: none;
+  @media (max-width: 767px) {
+    display: none;
   }
 `;
 
@@ -202,7 +190,8 @@ export const PhraseBox = styled.div`
     line-height: 31px;
     color: #ffffff;
     border-right: 2px solid rgba(255, 255, 255, 0.75);
-    animation: ${BlinkCursor} 500ms steps(40) infinite, ${TypingPhraseText} 0.2s steps(50) 0.2s normal both;
+    animation: ${BlinkCursor} 500ms steps(40) infinite,
+      ${TypingPhraseText} 0.2s steps(50) 0.2s normal both;
     animation-delay: 0.7s;
     white-space: nowrap;
     overflow: hidden;
@@ -239,7 +228,8 @@ export const AutorBox = styled.div`
     line-height: 31px;
     color: #ffffff;
     border-right: 2px solid rgba(255, 255, 255, 0.75);
-    animation: ${BlinkCursor} 500ms steps(40) infinite, ${TypingAutorText} 0.2s steps(25) 0.2s normal both;
+    animation: ${BlinkCursor} 500ms steps(40) infinite,
+      ${TypingAutorText} 0.2s steps(25) 0.2s normal both;
     animation-delay: 1s;
     white-space: nowrap;
     overflow: hidden;
@@ -257,13 +247,11 @@ export const AutorBox = styled.div`
 `;
 
 export const Footer = styled.footer`
-margin-top: 80px;
-width: 100%;
-height: 50px;
+  margin-top: 80px;
+  width: 100%;
+  height: 50px;
 
-@media screen {
-  max-width: 767px;
-  margin-top: 50px;
-  
-}
-`
+  @media (max-width: 767px) {
+    margin-top: 50px;
+  }
+`;

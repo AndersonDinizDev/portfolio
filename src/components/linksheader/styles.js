@@ -5,9 +5,7 @@ export const LinksHeader = styled.ul`
   list-style: none;
   gap: 30px;
 
-  @media screen {
-    
-    max-width: 768px;
+  @media (max-width: 767px) {
     display: none;
     flex-direction: column;
   }
