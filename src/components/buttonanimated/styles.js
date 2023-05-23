@@ -20,8 +20,7 @@ export const ButtonAnimated = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: ${props => (props.buttonSize ? "145px" : "109px")};
-  width: ${props => (props.isDownloadCv ? "150px" : "")};
+  width: 150px;
   height: 37px;
   border: 1px solid #c778dd;
   font-family: 'Fira Code';

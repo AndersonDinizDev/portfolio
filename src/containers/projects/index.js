@@ -127,7 +127,7 @@ const Projects = () => {
         <MainContent>
           <ProjectContent>
           <ProjectTitle>
-            <H1Animation bold={true}>
+            <H1Animation bold="true">
               <span>/</span>projects
             </H1Animation>
             <P>List of my projects</P>
@@ -144,15 +144,15 @@ const Projects = () => {
                   <GitHubLi key={repository.id}>
                     <img src={repository.thumbnailUrl} alt="github-banner" />
                     <Technologies>
-                      <P isGitPTech={true}><span>Most used technology: </span>{repository.language}</P>
+                      <P isgitptech="true"><span>Most used technology: </span>{repository.language}</P>
                     </Technologies>
                     <GitHubInfo>
-                      <H1 isGitH1={true}>{repository.name}</H1>
-                      <P isGitP={true}>{repository.description}</P>
+                      <H1 isgith1="true">{repository.name}</H1>
+                      <P isgitp="true">{repository.description}</P>
                       <GitHubButtons>
                         <Button href={repository.homepage} icon={LiveIcon}> Live
                         </Button>
-                        <Button href={repository.html_url} buttonSize={true} icon={Repository}>
+                        <Button href={repository.html_url} buttonsize="true" icon={Repository}>
                           Repository
                         </Button>
                       </GitHubButtons>

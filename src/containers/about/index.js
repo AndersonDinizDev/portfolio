@@ -109,10 +109,10 @@ const Contacts = () => {
             </LinksHeader>
           </nav>
         </Header>
-        <MainContent isAboutContent={true}>
+        <MainContent>
           <AboutContent>
             <AboutTitle>
-              <H1Animation bold={true}>
+              <H1Animation bold="true">
                 <span>/</span>about-me
               </H1Animation>
               <P>Who am i?</P>
@@ -133,7 +133,7 @@ const Contacts = () => {
                 <img src={AboutImage} alt="about-img" />
                 <StatusCard>
                   <Retangle></Retangle>
-                  <PAnimated isAboutPAnimated={true}>
+                  <PAnimated isaboutpanimated="true">
                     {" "}
                     Full-Stack Developer
                   </PAnimated>
@@ -141,7 +141,7 @@ const Contacts = () => {
               </AboutContentRight>
             </AboutCentralContainer>
             <SkillsTitle>
-              <H1Animation bold={true} isSkillsH1={true}>
+              <H1Animation bold="true" isskillsh1="true">
                 <span>/</span>skills
               </H1Animation>
             </SkillsTitle>
@@ -152,54 +152,54 @@ const Contacts = () => {
               <SkillsRight>
                 <SkillsCard>
                   <div>
-                    <H1 isAbooutH1={true}>Languages</H1>
+                    <H1 isabouth1="true">Languages</H1>
                   </div>
-                  <P isAboutP={true}>Javascript</P>
+                  <P isaboutp="true">Javascript</P>
                 </SkillsCard>
                 <SkillsCard>
                   <div>
-                    <H1 isAbooutH1={true}>Other</H1>
+                    <H1 isabouth1="true">Other</H1>
                   </div>
-                  <P isAboutP={true}> SCSS REST</P>
+                  <P isaboutp="true"> SCSS REST</P>
                 </SkillsCard>
                 <SkillsCard>
                   <div>
-                    <H1 isAbooutH1={true}>Tools</H1>
+                    <H1 isabouth1="true">Tools</H1>
                   </div>
-                  <P isAboutP={true}> VSCode Linux Figma Git</P>
+                  <P isaboutp="true"> VSCode Linux Figma Git</P>
                 </SkillsCard>
                 <SkillsCard>
                   <div>
-                    <H1 isAbooutH1={true}>Databases</H1>
+                    <H1 isabouth1="true">Databases</H1>
                   </div>
-                  <P isAboutP={true}> MongoDB Mysql PostgreeSQL</P>
+                  <P isaboutp="true"> MongoDB Mysql PostgreeSQL</P>
                 </SkillsCard>
                 <SkillsCard>
                   <div>
-                    <H1 isAbooutH1={true}>Frameworks</H1>
+                    <H1 isabouth1="true">Frameworks</H1>
                   </div>
-                  <P isAboutP={true}> React Express.js</P>
+                  <P isaboutp="true"> React Express.js</P>
                 </SkillsCard>
               </SkillsRight>
             </SkillsContent>
             <FunFactsTittle>
-              <H1Animation bold={true}>
+              <H1Animation bold="true">
                 <span>/</span>more-about-me
               </H1Animation>
             </FunFactsTittle>
             <FunFactsContent>
               <FunFactsLeft>
-                <SkillsCard isFunFactsCard={true}>
-                  <P isFunFactsP={true}>I Like pizza and coffe</P>
+                <SkillsCard isfunfactscard="true">
+                  <P isfunfactsp="true">I Like pizza and coffe</P>
                 </SkillsCard>
-                <SkillsCard isFunFactsCard={true}>
-                  <P isFunFactsP={true}>My favorite movie is Matrix Reloaded</P>
+                <SkillsCard isfunfactscard="true">
+                  <P isfunfactsp="true">My favorite movie is Matrix Reloaded</P>
                 </SkillsCard>
-                <SkillsCard isFunFactsCard={true}>
-                  <P isFunFactsP={true}>I like winter more than summer</P>
+                <SkillsCard isfunfactscard="true">
+                  <P isfunfactsp="true">I like winter more than summer</P>
                 </SkillsCard>
-                <SkillsCard isFunFactsCard={true}>
-                  <P isFunFactsP={true}>I often bike with my friends</P>
+                <SkillsCard isfunfactscard="true">
+                  <P isfunfactsp="true">I often bike with my friends</P>
                 </SkillsCard>
               </FunFactsLeft>
               <div>

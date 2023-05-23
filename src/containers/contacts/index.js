@@ -94,24 +94,24 @@ const About = () => {
         <MainContent>
           <ContactContent>
           <ContactTitle>
-            <H1Animation bold={true}>
+            <H1Animation bold="true">
               <span>/</span>contacts
             </H1Animation>
             <P>Talk to me</P>
           </ContactTitle>
           <ContactContentCentral>
             <ContactContentLeft>
-              <P isContactLeftP={true}>
+              <P iscontactleftp="true">
                 I am looking for an opportunity to join the IT field. However,
                 if you have another request or question, please don't hesitate
                 to contact me.
               </P>
             </ContactContentLeft>
             <ContactContentRight>
-              <SkillsCard isContactCard={true}>
+              <SkillsCard iscontactcard="true">
                 <P>Message me here</P>
-                <P isContactP={true}><img src={Tel} alt="telegram-img"/> (21) 98083-9803</P>
-                <P isContactP={true}><img src={Email} alt="email-img"/> andersondiniz159@gmail.com</P>
+                <P iscontactp="true"><img src={Tel} alt="telegram-img"/> (21) 98083-9803</P>
+                <P iscontactp="true"><img src={Email} alt="email-img"/> andersondiniz159@gmail.com</P>
               </SkillsCard>
             </ContactContentRight>
             </ContactContentCentral>

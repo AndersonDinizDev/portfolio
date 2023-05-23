@@ -104,12 +104,12 @@ const Home = () => {
             </LinksHeader>
           </nav>
         </Header>
-        <MainContent isHomeMainContent={true}>
+        <MainContent>
           <HomeContent>
           <HomeContentLeft>
             <HomeContentH2>Anderson Diniz <span>full-stack developer</span>, with<br/> a focus on the <span>front-end</span></HomeContentH2>
             <HomeContentP>Creating responsive websites where technology meets creativity.</HomeContentP>
-            <ButtonAnimated icon={Curriculum} isDownloadCv={true} href="https://drive.google.com/file/d/1CgW14hWZIV5TjydmRcMqP5lJbOQDEBKR/view">Download CV</ButtonAnimated>
+            <ButtonAnimated icon={Curriculum} href="https://drive.google.com/file/d/1CgW14hWZIV5TjydmRcMqP5lJbOQDEBKR/view">Download CV</ButtonAnimated>
             </HomeContentLeft>
           <HomeRightContent>
             <img src={Banner} alt="banner-img"/>
