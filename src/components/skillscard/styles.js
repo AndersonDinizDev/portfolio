@@ -1,8 +1,7 @@
 import styled from "styled-components";
 
 export const SkillsCard = styled.div`
-  width: ${props => props.isfunfactscard ? 'auto' : '192px'};
-  width: ${props => props.iscontactcard ? 'auto' : ''};
+  width: auto;
   height: ${props => props.isfunfactscard ? '37px' : 'auto'};
   border: 1px solid #abb2bf;
   margin-top: ${props => props.isfunfactscard ? '16px' : ''};
@@ -17,4 +16,9 @@ export const SkillsCard = styled.div`
     padding: 5px;
 
   }
+
+  @media (max-width: 767px) {
+      height: ${props => props.isfunfactscard ? 'auto' : ''};
+  }
+
 `;

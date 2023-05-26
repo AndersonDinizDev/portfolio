@@ -79,7 +79,7 @@ const Contacts = () => {
               </AboutContentLeft>
               <AboutContentRight>
                 <img src={AboutImage} alt="about-img" />
-                <StatusCard>
+                <StatusCard isaboutstatuscard="true">
                   <Retangle></Retangle>
                   <PAnimated isaboutpanimated="true">
                     {" "}
@@ -98,19 +98,19 @@ const Contacts = () => {
                 <img src={SkillsImg} alt="skillsimg-img" />
               </SkillsLeft>
               <SkillsRight>
-                <SkillsCard>
+                <SkillsCard istechnologiescard="true">
                   <div>
                     <H1 isabouth1="true">Languages</H1>
                   </div>
                   <P isaboutp="true">Javascript</P>
                 </SkillsCard>
-                <SkillsCard>
+                <SkillsCard istechnologiescard="true">
                   <div>
                     <H1 isabouth1="true">Other</H1>
                   </div>
                   <P isaboutp="true"> SCSS REST</P>
                 </SkillsCard>
-                <SkillsCard>
+                <SkillsCard istechnologiescard="true">
                   <div>
                     <H1 isabouth1="true">Tools</H1>
                   </div>
@@ -122,7 +122,7 @@ const Contacts = () => {
                   </div>
                   <P isaboutp="true"> MongoDB Mysql PostgreeSQL</P>
                 </SkillsCard>
-                <SkillsCard>
+                <SkillsCard istechnologiescard="true">
                   <div>
                     <H1 isabouth1="true">Frameworks</H1>
                   </div>

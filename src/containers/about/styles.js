@@ -13,7 +13,6 @@ export const AboutContent = styled.div`
   width: 80%;
 
   @media (max-width: 767px) {
-    width: 100%;
     margin-top: 30px;
   }
 `;
@@ -51,7 +50,7 @@ export const AboutContentLeft = styled.div`
 
   @media (max-width: 767px) {
     p {
-      width: 400px;
+      width: 350px;
       margin-top: 15px;
     }
   }

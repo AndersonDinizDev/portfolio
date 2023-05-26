@@ -42,7 +42,7 @@ export const ContactContentLeft = styled.div`
   width: 600px;
 
   @media (max-width: 767px) {
-    width: 400px;
+    width: 350px;
     margin-top: 20px;
   }
 `;

@@ -11,4 +11,9 @@ export const StatusCard = styled.div`
   border: 1px solid #abb2bf;
   background-color: transparent;
 
+  @media (max-width: 767px) {
+    width: ${props => props.isaboutstatuscard ? '300px' : ''};
+    
+  }
+
 `
