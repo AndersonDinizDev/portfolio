@@ -40,10 +40,12 @@ export const HomeContent = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  gap: 100px;
 
   @media (max-width: 767px) {
     flex-direction: column;
     margin-top: 30px;
+    gap: 50px;
   }
 `;
 
@@ -63,15 +65,34 @@ export const HomeContentH2 = styled.h2`
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
-  line-height: 42px;
+  line-height: 47px;
   color: #ffffff;
+  text-align: justify;
 
   span {
     color: #c778dd;
+    font-size: 30px;
+  }
+
+  .nametxt {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 40px;
   }
 
   @media (max-width: 767px) {
-    width: 328px;
+    width: 380px;
+    font-size: 20px;
+    text-align: left;
+    line-height: 35px;
+
+    span {
+      font-size: 17px;
+    }
+
+    .nametxt {
+      font-size: 30px;
+    }
   }
 `;
 
@@ -253,6 +274,8 @@ export const Footer = styled.footer`
   height: 50px;
 
   @media (max-width: 767px) {
-    margin-top: 50px;
+    margin-top: 0;
+    position: fixed;
+    bottom: 0;
   }
 `;

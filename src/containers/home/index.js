@@ -43,6 +43,17 @@ const Home = () => {
     deleteSpeed: 50,
   });
 
+  const [text2] = useTypewriter({
+    words: [
+      "Full-Stack developer.",
+      "Coffe lover.",
+      "React fan.",
+    ],
+    loop: {},
+    typeSpeed: 50,
+    deleteSpeed: 50,
+  });
+
   return (
     <Container>
       <Media>
@@ -65,8 +76,7 @@ const Home = () => {
           <HomeContent>
             <HomeContentLeft>
               <HomeContentH2>
-                Anderson Diniz <span>full-stack developer</span>, with
-                <br /> a focus on the <span>front-end</span>
+                Hello it`s me<br/><span className="nametxt">Anderson Diniz</span><br/> And I`m a <span>{text2}<Cursor/></span><br/>
               </HomeContentH2>
               <HomeContentP>
                 Creating responsive websites where technology meets creativity.

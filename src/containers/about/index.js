@@ -147,7 +147,7 @@ const Contacts = () => {
                   <P isfunfactsp="true">I like winter more than summer</P>
                 </SkillsCard>
                 <SkillsCard isfunfactscard="true">
-                  <P isfunfactsp="true">I often bike with my friends</P>
+                  <P isfunfactsp="true">I like to walk listening to music</P>
                 </SkillsCard>
               </FunFactsLeft>
               <div>

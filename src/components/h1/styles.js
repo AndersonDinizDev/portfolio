@@ -9,6 +9,7 @@ font-weight: ${props => props.isabouth1 ? '600' : ''};
 font-size: ${props => props.isgith1 ? '24px' : '32px'};
 font-size: ${props => props.isabouth1 ? '16px' : ''};
 line-height: ${props => props.isgith1 ? '21px' : '42px'};
+font-size: ${props => props.isprojectcompleteapps ? '1.5em' : ''};
 color: #FFFFFF;
 
 span {

@@ -56,7 +56,7 @@ export const GitHubProjects = styled.div`
 `;
 
 export const GitHubLi = styled.li`
-  width: 330.58px;
+  width: 18em;
   height: 450px;
   border: 1px solid #abb2bf;
   background: transparent;
@@ -67,13 +67,14 @@ export const GitHubLi = styled.li`
     width: 100%;
     object-fit: cover;
   }
+
 `;
 
 export const Technologies = styled.div`
   display: flex;
   align-items: center;
   padding-left: 8px;
-  width: 330.58px;
+  width: 18em;
   background: transparent;
   border-bottom: 1px solid #abb2bf;
 `;
