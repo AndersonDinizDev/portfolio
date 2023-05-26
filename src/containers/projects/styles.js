@@ -57,7 +57,7 @@ export const GitHubProjects = styled.div`
 
 export const GitHubLi = styled.li`
   width: 18em;
-  height: 450px;
+  height: 26em;
   border: 1px solid #abb2bf;
   background: transparent;
   margin-top: 48px;

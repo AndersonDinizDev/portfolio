@@ -20,6 +20,7 @@ align-items: ${props => props.iscontactp ? 'center' : ''};
 align-items: ${props => props.iscontactleftp  ? 'center' : ''};
 margin-top: ${props => props.isgitp ? '16px' : ''};
 text-align: ${props => props.iscontactleftp ? 'justify' : ''};
+font-size: ${props => props.isgitptech ? '0.9em' : ''};
 
 @media (max-width: 767px) {
     margin-top: ${props => props.iscontactleftp ? '30px' : ''};
