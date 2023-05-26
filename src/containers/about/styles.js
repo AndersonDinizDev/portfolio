@@ -11,6 +11,11 @@ export const AboutContent = styled.div`
   flex-direction: column;
   align-items: baseline;
   width: 80%;
+
+  @media (max-width: 767px) {
+    width: 100%;
+    margin-top: 30px;
+  }
 `;
 
 export const AboutTitle = styled.div`
@@ -19,10 +24,15 @@ export const AboutTitle = styled.div`
 `;
 
 export const AboutCentralContainer = styled.div`
-display: flex;
-justify-content: space-between;
-width: 100%;
-`
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  @media (max-width: 767px) {
+    flex-direction: column-reverse;
+    margin-top: 20px;
+  }
+`;
 
 export const AboutContentLeft = styled.div`
   display: flex;
@@ -36,11 +46,28 @@ export const AboutContentLeft = styled.div`
     line-height: 25px;
     color: #abb2bf;
     width: 515px;
-    text-justify: auto;
+    text-align: justify;
+  }
+
+  @media (max-width: 767px) {
+    p {
+      width: 400px;
+      margin-top: 15px;
+    }
   }
 `;
 
-export const AboutContentRight = styled.div``;
+export const AboutContentRight = styled.div`
+  @media (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 30%;
+    }
+  }
+`;
 
 export const Retangle = styled.div`
   width: 16px;
@@ -52,6 +79,10 @@ export const Retangle = styled.div`
 export const SkillsTitle = styled.div`
   display: flex;
   margin-top: 112px;
+
+  @media (max-width: 767px) {
+    margin-top: 50px;
+  }
 `;
 
 export const SkillsContent = styled.div`
@@ -61,12 +92,20 @@ export const SkillsContent = styled.div`
   gap: 16px;
   width: 100%;
   margin-top: 16px;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+  }
 `;
 
 export const SkillsLeft = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 767px) {
+    display: none;
+  }
 `;
 
 export const SkillsRight = styled.div`
@@ -75,9 +114,22 @@ export const SkillsRight = styled.div`
   width: 70%;
   gap: 10px;
   padding-left: 100px;
+
+  @media (max-width: 767px) {
+    flex-wrap: wrap;
+    width: 100%;
+    padding-left: 0;
+    flex-direction: row;
+    justify-content: center;
+    
+  }
 `;
 export const FunFactsTittle = styled.div`
   margin-top: 83px;
+
+  @media (max-width: 767px) {
+    margin-top: 50px;
+  }
 `;
 
 export const FunFactsContent = styled.div`
@@ -85,12 +137,23 @@ export const FunFactsContent = styled.div`
   justify-content: space-between;
   width: 100%;
   margin-top: 26px;
+
+  @media (max-width: 767px) {
+    img {
+      display: none;
+    }
+  }
 `;
 
 export const FunFactsLeft = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 5px;
+
+  @media (max-width: 767px) {
+    justify-content: center;
+    
+  }
 `;
 
 export const Footer = styled.footer`

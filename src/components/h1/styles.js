@@ -12,6 +12,11 @@ line-height: ${props => props.isgith1 ? '21px' : '42px'};
 color: #FFFFFF;
 
 span {
-  color: #C778DD;}
+  color: #C778DD;
+}
+
+@media (max-width: 767px) {
+  font-size: ${props => props.isprojectcompleteapps ? '20px' : ''};
+}
 
 `

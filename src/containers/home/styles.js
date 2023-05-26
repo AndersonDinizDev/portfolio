@@ -43,6 +43,7 @@ export const HomeContent = styled.div`
 
   @media (max-width: 767px) {
     flex-direction: column;
+    margin-top: 30px;
   }
 `;
 

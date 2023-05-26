@@ -11,6 +11,10 @@ export const ContactContent = styled.div`
   flex-direction: column;
   align-items: baseline;
   width: 100%;
+
+  @media (max-width: 767px) {
+    margin-top: 30px;
+  }
 `;
 
 export const ContactTitle = styled.div`
@@ -23,15 +27,32 @@ display: flex;
 width: 100%;
 justify-content: space-between;
 
+@media (max-width: 767px) {
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
 `
 
 export const ContactContentLeft = styled.div`
   display: flex;
   width: 600px;
+
+  @media (max-width: 767px) {
+    width: 400px;
+    margin-top: 20px;
+  }
 `;
 
 export const ContactContentRight = styled.div`
   display: flex;
+
+  @media (max-width: 767px) {
+    margin-top: 50px;
+  }
 `;
 
 export const Footer = styled.footer`

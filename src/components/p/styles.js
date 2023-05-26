@@ -19,4 +19,9 @@ display: ${props => props.iscontactleftp ? 'flex' : ''};
 align-items: ${props => props.iscontactp ? 'center' : ''};
 align-items: ${props => props.iscontactleftp  ? 'center' : ''};
 margin-top: ${props => props.isgitp ? '16px' : ''};
+text-align: ${props => props.iscontactleftp ? 'justify' : ''};
+
+@media (max-width: 767px) {
+    margin-top: ${props => props.iscontactleftp ? '30px' : ''};
+}
 `

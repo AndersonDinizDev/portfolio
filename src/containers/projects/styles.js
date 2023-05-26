@@ -11,6 +11,11 @@ export const ProjectContent = styled.div`
   flex-direction: column;
   align-items: baseline;
   width: 63%;
+
+  @media (max-width: 767px) {
+    width: 100%;
+    margin-top: 30px;
+  }
 `;
 
 export const ProjectTitle = styled.div`
@@ -30,6 +35,17 @@ export const CompleteProjectTitle = styled.div`
     width: 72%;
     margin-left: 20px;
     border-color: #c778dd;
+  }
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+
+    hr {
+      width: 100%;
+      margin-left: 0;
+    }
   }
 `;
 
@@ -81,10 +97,20 @@ export const GitHubList = styled.ul`
   justify-content: center;
   gap: 16px;
   margin-bottom: 50px;
+
+  @media (max-width: 767px) {
+  flex-wrap: '';
+  flex-direction: column;
+  align-items: center;
+  }
 `;
 
 export const Footer = styled.footer`
   margin-top: 80px;
   width: 100%;
   height: 50px;
+
+  @media (max-width: 767px) {
+    margin-top: 50px;
+  }
 `;

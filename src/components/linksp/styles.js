@@ -35,4 +35,13 @@ export const LinksP = styled.p`
   &:hover::after {
     width: 100%;
   }
+
+  @media(max-width: 767px) {
+    font-size: 20px;
+
+    &:hover::after {
+    width: 20%;
+  }
+    
+  }
 `;

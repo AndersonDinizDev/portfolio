@@ -7,5 +7,4 @@ export const MainContent = styled.div`
   align-items: center;
   margin-top: 62px;
   width: 100%;
-
 `

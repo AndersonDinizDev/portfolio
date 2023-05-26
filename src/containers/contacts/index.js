@@ -1,5 +1,4 @@
 import React from "react";
-import Logo from "../../assets/logo.svg";
 import GitHub from "../../assets/github.svg";
 import Telegram from "../../assets/telegram.svg";
 import Linkedin from "../../assets/linkedin.svg";
@@ -16,13 +15,8 @@ import {
   ContactContentRight,
 } from "./styles";
 
-import { useNavigate } from "react-router-dom";
-
 import ContainerItens from "../../components/containeritens";
 import Header from "../../components/header";
-import LogoText from "../../components/logo";
-import LinksHeader from "../../components/linksheader";
-import LinksP from "../../components/linksp";
 import Media from "../../components/media";
 import FooterContent from "../../components/footer";
 import H1Animation from "../../components/h1animation";
@@ -32,23 +26,6 @@ import MediaButton from "../../components/mediabutton";
 import MainContent from "../../components/maincontent";
 
 const About = () => {
-  const navigate = useNavigate();
-
-  const goToHome = () => {
-    navigate("/");
-  }
-
-  const goToProjects = () => {
-    navigate("/projects");
-  }
-
-  const goToAbout = () => {
-    navigate("/about");
-  }
-
-  const goToContacts = () => {
-    navigate("/contacts");
-  }
 
   return (
     <Container>
@@ -61,36 +38,7 @@ const About = () => {
         </div>
       </Media>
       <ContainerItens>
-        <Header>
-          <LogoText>
-            <img src={Logo} alt="logo-img" />
-            ANDERSON DINIZ
-          </LogoText>
-          <nav>
-            <LinksHeader>
-              <li>
-                <LinksP onClick={goToHome}>
-                  <span>#</span>home
-                </LinksP>
-              </li>
-              <li>
-                <LinksP onClick={goToProjects}>
-                  <span>#</span>projects
-                </LinksP>
-              </li>
-              <li>
-                <LinksP onClick={goToAbout}>
-                  <span>#</span>about-me
-                </LinksP>
-              </li>
-              <li>
-                <LinksP onClick={goToContacts}>
-                  <span>#</span>contacts
-                </LinksP>
-              </li>
-            </LinksHeader>
-          </nav>
-        </Header>
+        <Header/>
         <MainContent>
           <ContactContent>
           <ContactTitle>
