@@ -21,8 +21,9 @@
 
 ## ✨ Features:
 - [x] Add connection with GitHub API;
-- [x] Add Framer-Motion animation;
-- [ ] Add Responsive
+- [x] Add framer-Motion animation;
+- [x] Add responsive;
+- [x] Add language change;
 
 ## 💻 Requeriments:
 
