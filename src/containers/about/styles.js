@@ -20,6 +20,10 @@ export const AboutContent = styled.div`
 export const AboutTitle = styled.div`
   display: flex;
   flex-direction: column;
+
+  .aboutTitle {
+    width: auto;
+  }
 `;
 
 export const AboutCentralContainer = styled.div`

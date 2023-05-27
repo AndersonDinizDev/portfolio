@@ -21,6 +21,10 @@ export const ProjectContent = styled.div`
 export const ProjectTitle = styled.div`
   display: flex;
   flex-direction: column;
+
+  .projectTittle {
+    width: 180px;
+  }
 `;
 
 export const CompleteProjectTitle = styled.div`

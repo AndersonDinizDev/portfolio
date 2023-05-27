@@ -1,4 +1,7 @@
 import React from "react";
+import { useTypewriter, Cursor } from "react-simple-typewriter";
+import { i18n } from "../../translate/i18n";
+
 import GitHub from "../../assets/github.svg";
 import Telegram from "../../assets/telegram.svg";
 import Linkedin from "../../assets/linkedin.svg";
@@ -34,10 +37,19 @@ import SkillsCard from "../../components/skillscard";
 import H1 from "../../components/h1";
 import MediaButton from "../../components/mediabutton";
 import MainContent from "../../components/maincontent";
-import PAnimated from "../../components/panimated";
 import StatusCard from "../../components/statuscard";
 
 const Contacts = () => {
+
+    const [text] = useTypewriter({
+    words: [
+      i18n.t('homeAutomaticTexts.text1'),
+    ],
+    loop: 1,
+    typeSpeed: 50,
+    deleteSpeed: 50,
+  });
+
 
   return (
     <Container>
@@ -60,37 +72,32 @@ const Contacts = () => {
         <MainContent>
           <AboutContent>
             <AboutTitle>
+              <div className="aboutTitle">
               <H1Animation bold="true">
-                <span>/</span>about-me
+                <span>/</span>{i18n.t('aboutTitle.text1')}
               </H1Animation>
-              <P>Who am i?</P>
+              </div>
+              <div className="aboutSub">
+              <P>{i18n.t('aboutTitle.text2')}</P>
+              </div>
             </AboutTitle>
             <AboutCentralContainer>
               <AboutContentLeft>
-                <p>
-                  Hello, I'm Anderson! I'm a full-stack developer living in Rio
-                  de Janeiro, Brazil. I can develop responsive websites from
-                  scratch and turn them into modern, user-friendly web
-                  experiences. Turning my creativity and knowledge into websites
-                  has been my passion for almost a year now. I have helped
-                  several clients establish their online presence. I always
-                  strive to learn about the newest technologies and frameworks.
-                </p>
+                <p>{i18n.t('aboutCentralText.text')}</p>
               </AboutContentLeft>
               <AboutContentRight>
                 <img src={AboutImage} alt="about-img" />
                 <StatusCard isaboutstatuscard="true">
                   <Retangle></Retangle>
-                  <PAnimated isaboutpanimated="true">
-                    {" "}
-                    Full-Stack Developer
-                  </PAnimated>
+                  <P isaboutpanimated="true">
+                    {text}<span><Cursor/></span>
+                  </P>
                 </StatusCard>
               </AboutContentRight>
             </AboutCentralContainer>
             <SkillsTitle>
               <H1Animation bold="true" isskillsh1="true">
-                <span>/</span>skills
+                <span>/</span>{i18n.t('skillsTittle.text')}
               </H1Animation>
             </SkillsTitle>
             <SkillsContent>
@@ -100,25 +107,25 @@ const Contacts = () => {
               <SkillsRight>
                 <SkillsCard istechnologiescard="true">
                   <div>
-                    <H1 isabouth1="true">Languages</H1>
+                    <H1 isabouth1="true">{i18n.t('technologiesTexts.text1')}</H1>
                   </div>
                   <P isaboutp="true">Javascript</P>
                 </SkillsCard>
                 <SkillsCard istechnologiescard="true">
                   <div>
-                    <H1 isabouth1="true">Other</H1>
+                    <H1 isabouth1="true">{i18n.t('technologiesTexts.text2')}</H1>
                   </div>
                   <P isaboutp="true"> SCSS REST</P>
                 </SkillsCard>
                 <SkillsCard istechnologiescard="true">
                   <div>
-                    <H1 isabouth1="true">Tools</H1>
+                    <H1 isabouth1="true">{i18n.t('technologiesTexts.text3')}</H1>
                   </div>
                   <P isaboutp="true"> VSCode Linux Figma Git</P>
                 </SkillsCard>
                 <SkillsCard>
                   <div>
-                    <H1 isabouth1="true">Databases</H1>
+                    <H1 isabouth1="true">{i18n.t('technologiesTexts.text4')}</H1>
                   </div>
                   <P isaboutp="true"> MongoDB Mysql PostgreeSQL</P>
                 </SkillsCard>
@@ -132,22 +139,22 @@ const Contacts = () => {
             </SkillsContent>
             <FunFactsTittle>
               <H1Animation bold="true">
-                <span>/</span>more-about-me
+                <span>/</span>{i18n.t('moreAboutMeTittle.text')}
               </H1Animation>
             </FunFactsTittle>
             <FunFactsContent>
               <FunFactsLeft>
                 <SkillsCard isfunfactscard="true">
-                  <P isfunfactsp="true">I Like pizza and coffe</P>
+                  <P isfunfactsp="true">{i18n.t('moreAboutMeTexts.text1')}</P>
                 </SkillsCard>
                 <SkillsCard isfunfactscard="true">
-                  <P isfunfactsp="true">My favorite movie is Matrix Reloaded</P>
+                  <P isfunfactsp="true">{i18n.t('moreAboutMeTexts.text2')}</P>
                 </SkillsCard>
                 <SkillsCard isfunfactscard="true">
-                  <P isfunfactsp="true">I like winter more than summer</P>
+                  <P isfunfactsp="true">{i18n.t('moreAboutMeTexts.text3')}</P>
                 </SkillsCard>
                 <SkillsCard isfunfactscard="true">
-                  <P isfunfactsp="true">I like to walk listening to music</P>
+                  <P isfunfactsp="true">{i18n.t('moreAboutMeTexts.text4')}</P>
                 </SkillsCard>
               </FunFactsLeft>
               <div>
@@ -159,7 +166,7 @@ const Contacts = () => {
       </ContainerItens>
       <Footer>
         <FooterContent>
-          <p>© Copyright 2023. Made by Anderson Diniz</p>
+          <p>{i18n.t('footer.text')}</p>
         </FooterContent>
       </Footer>
     </Container>

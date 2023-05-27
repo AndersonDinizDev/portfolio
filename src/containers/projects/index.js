@@ -31,6 +31,7 @@ import H1Animation from "../../components/h1animation";
 import FooterContent from "../../components/footer";
 import MediaButton from "../../components/mediabutton";
 import MainContent from "../../components/maincontent";
+import { i18n } from "../../translate/i18n";
 
 const Projects = () => {
   const [repo, setRepo] = useState([]);
@@ -75,14 +76,18 @@ const Projects = () => {
         <MainContent>
           <ProjectContent>
           <ProjectTitle>
+            <div className="projectTittle">
             <H1Animation bold="true">
-              <span>/</span>projects
+              <span>/</span>{i18n.t('projectsTittle.text1')}
             </H1Animation>
-            <P>List of my projects</P>
+            </div>
+            <div className="projectSub">
+            <P>{i18n.t('projectsTittle.text2')}</P>
+            </div>
           </ProjectTitle>
             <CompleteProjectTitle>
             <H1 isprojectcompleteapps="true">
-              <span>#</span>complete-apps
+              <span>#</span>{i18n.t('projectsList.text')}
             </H1>
             <hr/>
             </CompleteProjectTitle>
@@ -92,16 +97,16 @@ const Projects = () => {
                   <GitHubLi key={repository.id}>
                     <img src={repository.thumbnailUrl} alt="github-banner" />
                     <Technologies>
-                      <P isgitptech="true"><span>Most used technology: </span>{repository.language}</P>
+                      <P isgitptech="true"><span isgitptech="true">{i18n.t('projectsCardText.text')}</span>{repository.language}</P>
                     </Technologies>
                     <GitHubInfo>
                       <H1 isgith1="true">{repository.name}</H1>
                       <P isgitp="true">{repository.description}</P>
                       <GitHubButtons>
-                        <Button href={repository.homepage} icon={LiveIcon}> Live
+                        <Button href={repository.homepage} icon={LiveIcon}> {i18n.t('projectsButtonText.text1')}
                         </Button>
                         <Button href={repository.html_url} buttonsize="true" icon={Repository}>
-                          Repository
+                        {i18n.t('projectsButtonText.text2')}
                         </Button>
                       </GitHubButtons>
                     </GitHubInfo>
@@ -114,7 +119,7 @@ const Projects = () => {
       </ContainerItens>
       <Footer>
         <FooterContent>
-          <p>© Copyright 2023. Made by Anderson Diniz</p>
+          <p>{i18n.t('footer.text')}</p>
         </FooterContent>
         </Footer>
     </Container>

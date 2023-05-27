@@ -8,6 +8,7 @@ font-size: 16px;
 line-height: 21px;
 color: ${props => props.isfunfactsp ? '#ABB2BF' : '#FFFFFF'};
 color: ${props => props.isgitp ? '#ABB2BF' : ''};
+color: ${props => props.isaboutpanimated ? '#ABB2BF' : ''};
 color: ${props => props.isgitptech ? '#ABB2BF' : ''};
 color: ${props => props.isaboutp ? '#ABB2BF' : ''};
 color: ${props => props.iscontactp ? '#ABB2BF' : ''};
@@ -21,6 +22,10 @@ align-items: ${props => props.iscontactleftp  ? 'center' : ''};
 margin-top: ${props => props.isgitp ? '16px' : ''};
 text-align: ${props => props.iscontactleftp ? 'justify' : ''};
 font-size: ${props => props.isgitptech ? '0.9em' : ''};
+
+span {
+    color: ${props => props.isgitptech ? '#ABB2BF' : ''};
+  }
 
 @media (max-width: 767px) {
     margin-top: ${props => props.iscontactleftp ? '30px' : ''};

@@ -1,5 +1,6 @@
 import React from "react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
+import { i18n } from "../../translate/i18n";
 
 import GitHub from "../../assets/github.svg";
 import Telegram from "../../assets/telegram.svg";
@@ -35,8 +36,8 @@ const Home = () => {
 
   const [text] = useTypewriter({
     words: [
-      "Currently working on portfólio",
-      "Currently studying C# and Javascript",
+      i18n.t('homeStatusCardTexts.text1'),
+      i18n.t('homeStatusCardTexts.text2'),
     ],
     loop: {},
     typeSpeed: 50,
@@ -45,11 +46,27 @@ const Home = () => {
 
   const [text2] = useTypewriter({
     words: [
-      "Full-Stack developer.",
-      "Coffe lover.",
-      "React fan.",
+      i18n.t('homeAutomaticTexts.text1'),
+      i18n.t('homeAutomaticTexts.text2'),
+      i18n.t('homeAutomaticTexts.text3'),
     ],
     loop: {},
+    typeSpeed: 50,
+    deleteSpeed: 50,
+  });
+
+  const [text3] = useTypewriter({
+    words: [
+      i18n.t('homeMessage.text')
+    ],
+    loop: 1,
+    typeSpeed: 50,
+    deleteSpeed: 50,
+  });
+
+  const [text4] = useTypewriter({
+    words: [('- David Ribeiro')],
+    loop: 1,
     typeSpeed: 50,
     deleteSpeed: 50,
   });
@@ -76,10 +93,10 @@ const Home = () => {
           <HomeContent>
             <HomeContentLeft>
               <HomeContentH2>
-                Hello it`s me<br/><span className="nametxt">Anderson Diniz</span><br/> And I`m a <span>{text2}<Cursor/></span><br/>
+                {i18n.t('homeWelcomeTexts.text1')}<br/><span className="nametxt">Anderson Diniz</span><br/> {i18n.t('homeWelcomeTexts.text2')} <span>{text2}<Cursor/></span><br/>
               </HomeContentH2>
               <HomeContentP>
-                Creating responsive websites where technology meets creativity.
+                {i18n.t('homeWelcomeTexts.text3')}
               </HomeContentP>
               <ButtonAnimated
                 icon={Curriculum}
@@ -105,11 +122,11 @@ const Home = () => {
             <div>
               <PhraseBox>
                 <img src={Aspas} alt="aspas-img" />
-                <p>With great power comes great electricity bill</p>
+                <p>{text3}<span><Cursor/></span></p>
               </PhraseBox>
               <AutorBox>
                 <img src={Aspas} alt="aspas-img" />
-                <p>- Dr. Who</p>
+                <p>{text4}<span><Cursor/></span></p>
               </AutorBox>
             </div>
           </PhraseContent>
@@ -117,7 +134,7 @@ const Home = () => {
       </ContainerItens>
       <Footer>
         <FooterContent>
-          <p>© Copyright 2023. Made by Anderson Diniz</p>
+          <p>{i18n.t('footer.text')}</p>
         </FooterContent>
       </Footer>
     </Container>

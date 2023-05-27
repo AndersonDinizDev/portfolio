@@ -16,7 +16,7 @@ from {
   width: 0;
 }
 to {
-  width:  200px;
+  width:  250px;
 }
 `
 

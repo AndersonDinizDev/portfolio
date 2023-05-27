@@ -75,7 +75,7 @@ export const Header = styled.div`
         align-items: center;
         justify-content: center;
         margin-top: 100px;
-        gap: 10px;
+        gap: 25px;
       }
     }
 
@@ -95,6 +95,19 @@ export const Header = styled.div`
       transition: height 400ms ease-in-out;
       gap: 40px;
     }
+
+    button {
+      transition: all 0.5s;
+      cursor: pointer;
+      background: none;
+      border: none;
+      width: 20px;
+      height: 20px;
+
+      &:hover {
+        transform: scale(1.5);
+      }
+    }
   }
 `;
 
@@ -111,4 +124,9 @@ export const LogoText = styled.h1`
   gap: 8px;
   width: 200px;
   z-index: 1;
+`;
+
+export const Flag = styled.img`
+  width: 20px;
+  height: 20px;
 `;

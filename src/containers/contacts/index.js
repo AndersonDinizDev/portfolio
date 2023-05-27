@@ -24,6 +24,7 @@ import P from "../../components/p";
 import SkillsCard from "../../components/skillscard";
 import MediaButton from "../../components/mediabutton";
 import MainContent from "../../components/maincontent";
+import { i18n } from "../../translate/i18n";
 
 const About = () => {
 
@@ -42,22 +43,24 @@ const About = () => {
         <MainContent>
           <ContactContent>
           <ContactTitle>
+            <div className="contactsTitle">
             <H1Animation bold="true">
-              <span>/</span>contacts
+              <span>/</span>{i18n.t('contactsTittle.text')}
             </H1Animation>
-            <P>Talk to me</P>
+            </div>
+            <div className="contactsSub">
+            <P>{i18n.t('contactsSub.text')}</P>
+            </div>
           </ContactTitle>
           <ContactContentCentral>
             <ContactContentLeft>
               <P iscontactleftp="true">
-                I am looking for an opportunity to join the IT field. However,
-                if you have another request or question, please don't hesitate
-                to contact me.
+              {i18n.t('aboutText.text')}
               </P>
             </ContactContentLeft>
             <ContactContentRight>
               <SkillsCard iscontactcard="true">
-                <P>Message me here</P>
+                <P>{i18n.t('contactsCard.text')}</P>
                 <P iscontactp="true"><img src={Tel} alt="telegram-img"/> (21) 98083-9803</P>
                 <P iscontactp="true"><img src={Email} alt="email-img"/> andersondiniz159@gmail.com</P>
               </SkillsCard>
@@ -68,7 +71,7 @@ const About = () => {
       </ContainerItens>
       <Footer>
         <FooterContent>
-          <p>© Copyright 2023. Made by Anderson Diniz</p>
+          <p>{i18n.t('footer.text')}</p>
         </FooterContent>
       </Footer>
     </Container>

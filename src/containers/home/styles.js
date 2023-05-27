@@ -1,33 +1,4 @@
-import styled, { keyframes } from "styled-components";
-
-// KeyFrames - Animations
-const BlinkCursor = keyframes`
-
-from {
-  border-right-color: rgba(255, 255, 255, 0.75);
-}
-to {
-  border-right-color: transparent;
-}
-
-`;
-
-const TypingPhraseText = keyframes`
-from {
-  width: 0;
-}
-to {
-  width: 650px;
-}
-`;
-const TypingAutorText = keyframes`
-from {
-  width: 0;
-}
-to {
-  width: 130px;
-}
-`;
+import styled from "styled-components";
 
 export const Container = styled.div`
   background-color: #1e1e1e;
@@ -71,7 +42,7 @@ export const HomeContentH2 = styled.h2`
 
   span {
     color: #c778dd;
-    font-size: 30px;
+    font-size: 25px;
   }
 
   .nametxt {
@@ -106,6 +77,7 @@ export const HomeContentP = styled.p`
 
   @media (max-width: 767px) {
     width: 328px;
+    text-align: center;
   }
 `;
 
@@ -196,13 +168,14 @@ export const PhraseContent = styled.div`
 `;
 
 export const PhraseBox = styled.div`
-  width: 712px;
+  width: 740px;
   height: 95px;
   background: transparent;
   border: 1px solid #abb2bf;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 5px;
 
   p {
     font-family: "Fira Code";
@@ -211,12 +184,10 @@ export const PhraseBox = styled.div`
     font-size: 24px;
     line-height: 31px;
     color: #ffffff;
-    border-right: 2px solid rgba(255, 255, 255, 0.75);
-    animation: ${BlinkCursor} 500ms steps(40) infinite,
-      ${TypingPhraseText} 0.2s steps(50) 0.2s normal both;
     animation-delay: 0.7s;
-    white-space: nowrap;
+    white-space: normal;
     overflow: hidden;
+    text-align: center;
   }
 
   img {
@@ -228,10 +199,14 @@ export const PhraseBox = styled.div`
     transform: translate(-320px, -40px);
     font-size: 14px;
   }
+
+  span {
+    color: #c778dd;
+  }
 `;
 
 export const AutorBox = styled.div`
-  width: 162px;
+  width: 250px;
   height: 63px;
   right: 1px;
   top: 95px;
@@ -249,9 +224,6 @@ export const AutorBox = styled.div`
     font-size: 24px;
     line-height: 31px;
     color: #ffffff;
-    border-right: 2px solid rgba(255, 255, 255, 0.75);
-    animation: ${BlinkCursor} 500ms steps(40) infinite,
-      ${TypingAutorText} 0.2s steps(25) 0.2s normal both;
     animation-delay: 1s;
     white-space: nowrap;
     overflow: hidden;
@@ -265,6 +237,10 @@ export const AutorBox = styled.div`
     padding: 10 10px;
     transform: translate(40px, -25px);
     font-size: 14px;
+  }
+
+  span {
+    color: #c778dd;
   }
 `;
 
