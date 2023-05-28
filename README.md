@@ -40,6 +40,7 @@ The following tools were used in this project:
 - [Styled-Components](https://styled-components.com/docs)
 - [React-Router-Dom](https://styled-components.com/docs)
 - [Framer-Motion](https://www.framer.com/motion/)
+- [i18next](https://www.i18next.com/)
 
 ## :checkered_flag: Starting ##
 
