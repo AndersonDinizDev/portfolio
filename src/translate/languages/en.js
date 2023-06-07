@@ -14,7 +14,7 @@ const messages = {
             "Creating responsive websites where technology meets creativity.",
         },
         homeAutomaticTexts: {
-          text1: "Full-Stack Developer.",
+          text1: "Front-End Developer.",
           text2: "React fan.",
           text3: "Coffe lover.",
         },
