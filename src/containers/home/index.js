@@ -100,7 +100,7 @@ const Home = () => {
               </HomeContentP>
               <ButtonAnimated
                 icon={Curriculum}
-                href="https://drive.google.com/file/d/1CgW14hWZIV5TjydmRcMqP5lJbOQDEBKR/view"
+                href="https://drive.google.com/file/d/1Cvw_K0td_hAhDNizL_lkj2hGiCWjYQIO/view"
               >
                 Download CV
               </ButtonAnimated>
