@@ -61,7 +61,7 @@ export const GitHubProjects = styled.div`
 
 export const GitHubLi = styled.li`
   width: 18em;
-  height: 26em;
+  height: 24em;
   border: 1px solid #abb2bf;
   background: transparent;
   margin-top: 48px;
@@ -74,13 +74,8 @@ export const GitHubLi = styled.li`
 
 `;
 
-export const Technologies = styled.div`
-  display: flex;
-  align-items: center;
-  padding-left: 8px;
-  width: 18em;
-  background: transparent;
-  border-bottom: 1px solid #abb2bf;
+export const Technologies = styled.hr`
+  border: 0.5px solid #abb2bf;
 `;
 
 export const GitHubInfo = styled.div`

@@ -99,9 +99,7 @@ const Projects = () => {
                 {repo.map((repository) => (
                   <GitHubLi key={repository.id}>
                     <img src={repository.thumbnailUrl} alt="github-banner" />
-                    <Technologies>
-                      <P isgitptech="true"><span isgitptech="true">{i18n.t('projectsCardText.text')}</span>{repository.language}</P>
-                    </Technologies>
+                    <Technologies/>
                     <GitHubInfo>
                       <H1 isgith1="true">{repository.name}</H1>
                       <P isgitp="true">{repository.description}</P>
