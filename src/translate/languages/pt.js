@@ -44,7 +44,7 @@ const messages = {
         text2: "Quem sou eu?",
       },
       aboutCentralText: {
-        text: "Meu nome é Anderson Diniz e tenho 26 anos. Atualmente, resido no Rio de Janeiro, Brasil. Tenho experiência em desenvolvimento de sites responsivos, criando-os do zero e transformando-os em experiências web modernas e intuitivas. Há quase um ano, descobri minha paixão em transformar minha criatividade e conhecimento em sites funcionais e atraentes. Ao longo do tempo, tive a oportunidade de ajudar diversos clientes a estabelecerem sua presença online. Sempre me dedico a aprender sobre as mais recentes tecnologias e frameworks, buscando estar atualizado e oferecer soluções inovadoras.",
+        text: "Meu nome é Anderson Diniz e tenho 26 anos. Atualmente, resido no Rio de Janeiro, Brasil. Tenho experiência em desenvolvimento de sites responsivos, criando-os do zero e transformando-os em experiências web modernas e intuitivas. Há quase um ano, descobri minha paixão em transformar minha criatividade e conhecimento em sites funcionais e atraentes. Ao longo do tempo, tive a oportunidade de ajudar alguns clientes a estabelecerem sua presença online. Sempre me dedico a aprender sobre as mais recentes tecnologias e frameworks, buscando estar atualizado e oferecer soluções inovadoras.",
       },
       skillsTittle: {
         text: "Habilidades",
