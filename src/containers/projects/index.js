@@ -46,7 +46,7 @@ const Projects = () => {
           (repo) =>
             repo.name !== "andersondinizdev" &&
             repo.name !== "projects-thumbnail" &&
-            repo.name !== "shopping-cart" &&
+            repo.name !== "pokedex" &&
             repo.name !== "users-api" &&
             repo.name !== "users-app"
         );
