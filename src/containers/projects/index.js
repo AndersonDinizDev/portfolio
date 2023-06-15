@@ -48,7 +48,8 @@ const Projects = () => {
             repo.name !== "projects-thumbnail" &&
             repo.name !== "pokedex" &&
             repo.name !== "users-api" &&
-            repo.name !== "users-app"
+            repo.name !== "users-app" &&
+            repo.name !== "fastburger-api"
         );
         const reposWithThumbnails = filteredRepos.map((repo) => {
           return {
