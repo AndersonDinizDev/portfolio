@@ -115,7 +115,7 @@ const Contacts = () => {
                   <div>
                     <H1 isabouth1="true">{i18n.t('technologiesTexts.text2')}</H1>
                   </div>
-                  <P isaboutp="true"> SCSS REST</P>
+                  <P isaboutp="true"> SCSS Styled-Components UX Design API</P>
                 </SkillsCard>
                 <SkillsCard istechnologiescard="true">
                   <div>
@@ -127,7 +127,7 @@ const Contacts = () => {
                   <div>
                     <H1 isabouth1="true">{i18n.t('technologiesTexts.text4')}</H1>
                   </div>
-                  <P isaboutp="true"> MongoDB Mysql PostgreeSQL</P>
+                  <P isaboutp="true"> Node.js</P>
                 </SkillsCard>
                 <SkillsCard istechnologiescard="true">
                   <div>
