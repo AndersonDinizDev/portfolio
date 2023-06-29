@@ -50,7 +50,7 @@ $ git clone https://github.com/andersondinizdev/portfolio.git
 # Access
 $ cd portfolio
 # open the terminal and type
-$ npm i or npm install
+$ yarn i or yarn install
 # start the project
 $ yarn start
 # The server will initialize in the <http://127.0.0.1:3000>
