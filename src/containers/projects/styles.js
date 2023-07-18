@@ -66,10 +66,16 @@ export const GitHubLi = styled.li`
   background: transparent;
   margin-top: 48px;
   list-style: none;
+  transition: all 200ms ease-in;
+  cursor: pointer;
 
   img {
     width: 100%;
     object-fit: cover;
+  }
+
+  &:hover {
+    transform: scale(1.1);
   }
 
 `;

@@ -26,7 +26,7 @@ const messages = {
         text: "Não é a linguagem de programação que define o programador, mas sim sua lógica.",
       },
       projectsTittle: {
-        text1: "projetos",
+        text1: "Projetos",
         text2: "Lista dos meus projetos",
       },
       projectsList: {
@@ -53,7 +53,8 @@ const messages = {
         text1: "Linguagens",
         text2: "Outros",
         text3: "Ferramentas",
-        text4: "Banco de Dados",
+        text4: "Back-end",
+        text5: "Bibliotecas"
       },
       moreAboutMeTittle: {
         text: "Mais-sobre-mim",

@@ -115,25 +115,25 @@ const Contacts = () => {
                   <div>
                     <H1 isabouth1="true">{i18n.t('technologiesTexts.text2')}</H1>
                   </div>
-                  <P isaboutp="true"> SCSS Styled-Components UX Design API</P>
+                  <P isaboutp="true"> SCSS, Styled-Components, UX Design, Material UI, API </P>
                 </SkillsCard>
                 <SkillsCard istechnologiescard="true">
                   <div>
                     <H1 isabouth1="true">{i18n.t('technologiesTexts.text3')}</H1>
                   </div>
-                  <P isaboutp="true"> VSCode Linux Figma Git</P>
+                  <P isaboutp="true"> VSCode, Linux, Figma, Git </P>
                 </SkillsCard>
                 <SkillsCard>
                   <div>
                     <H1 isabouth1="true">{i18n.t('technologiesTexts.text4')}</H1>
                   </div>
-                  <P isaboutp="true"> Node.js</P>
+                  <P isaboutp="true"> NodeJS, ExpressJS </P>
                 </SkillsCard>
                 <SkillsCard istechnologiescard="true">
                   <div>
-                    <H1 isabouth1="true">Frameworks</H1>
+                    <H1 isabouth1="true">{i18n.t('technologiesTexts.text5')}</H1>
                   </div>
-                  <P isaboutp="true"> React Express.js</P>
+                  <P isaboutp="true"> ReactJS </P>
                 </SkillsCard>
               </SkillsRight>
             </SkillsContent>

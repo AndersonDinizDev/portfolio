@@ -53,7 +53,8 @@ const messages = {
           text1: "Languages",
           text2: "Others",
           text3: "Tools",
-          text4: "Databases",
+          text4: "Back-End",
+          text5: "Libraries"
         },
         moreAboutMeTittle: {
           text: "More-about-me",
