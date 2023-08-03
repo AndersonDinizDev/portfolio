@@ -109,7 +109,7 @@ const Contacts = () => {
                   <div>
                     <H1 isabouth1="true">{i18n.t('technologiesTexts.text1')}</H1>
                   </div>
-                  <P isaboutp="true">Javascript</P>
+                  <P isaboutp="true">JavaScript, TypeScript</P>
                 </SkillsCard>
                 <SkillsCard istechnologiescard="true">
                   <div>
