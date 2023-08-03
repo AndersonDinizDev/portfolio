@@ -49,7 +49,7 @@ const Projects = () => {
             repo.name !== "users-api" &&
             repo.name !== "users-app" &&
             repo.name !== "fit-app" &&
-            repo.name !== "social-media" &&
+            repo.name !== "viagem-app" &&
             repo.name !== "fastburger-api"
         );
         const reposWithThumbnails = filteredRepos.map((repo) => {
