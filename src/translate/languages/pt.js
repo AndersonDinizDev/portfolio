@@ -20,7 +20,7 @@ const messages = {
       },
       homeStatusCardTexts: {
         text1: "Trabalhando em meu Portfólio",
-        text2: "Estudando atualmente C# e Javascript",
+        text2: "Estudando atualmente JavaScript e PHP",
       },
       homeMessage: {
         text: "Não é a linguagem de programação que define o programador, mas sim sua lógica.",
