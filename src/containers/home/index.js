@@ -33,11 +33,10 @@ import MainContent from "../../components/maincontent";
 import ButtonAnimated from "../../components/buttonanimated";
 
 const Home = () => {
-
   const [text] = useTypewriter({
     words: [
-      i18n.t('homeStatusCardTexts.text1'),
-      i18n.t('homeStatusCardTexts.text2'),
+      i18n.t("homeStatusCardTexts.text1"),
+      i18n.t("homeStatusCardTexts.text2"),
     ],
     loop: {},
     typeSpeed: 50,
@@ -46,9 +45,9 @@ const Home = () => {
 
   const [text2] = useTypewriter({
     words: [
-      i18n.t('homeAutomaticTexts.text1'),
-      i18n.t('homeAutomaticTexts.text2'),
-      i18n.t('homeAutomaticTexts.text3'),
+      i18n.t("homeAutomaticTexts.text1"),
+      i18n.t("homeAutomaticTexts.text2"),
+      i18n.t("homeAutomaticTexts.text3"),
     ],
     loop: {},
     typeSpeed: 50,
@@ -56,16 +55,14 @@ const Home = () => {
   });
 
   const [text3] = useTypewriter({
-    words: [
-      i18n.t('homeMessage.text')
-    ],
+    words: [i18n.t("homeMessage.text")],
     loop: 1,
     typeSpeed: 50,
     deleteSpeed: 50,
   });
 
   const [text4] = useTypewriter({
-    words: [('- David Ribeiro')],
+    words: ["- David Ribeiro"],
     loop: 1,
     typeSpeed: 50,
     deleteSpeed: 50,
@@ -88,19 +85,25 @@ const Home = () => {
         </div>
       </Media>
       <ContainerItens>
-        <Header/>
+        <Header />
         <MainContent>
           <HomeContent>
             <HomeContentLeft>
               <HomeContentH2>
-                {i18n.t('homeWelcomeTexts.text1')}<br/><span className="nametxt">Anderson Diniz</span><br/> {i18n.t('homeWelcomeTexts.text2')} <span>{text2}<Cursor/></span><br/>
+                {i18n.t("homeWelcomeTexts.text1")}
+                <br />
+                <span className="nametxt">Anderson Diniz</span>
+                <br /> {i18n.t("homeWelcomeTexts.text2")}{" "}
+                <span>
+                  {text2}
+                  <Cursor />
+                </span>
+                <br />
               </HomeContentH2>
-              <HomeContentP>
-                {i18n.t('homeWelcomeTexts.text3')}
-              </HomeContentP>
+              <HomeContentP>{i18n.t("homeWelcomeTexts.text3")}</HomeContentP>
               <ButtonAnimated
                 icon={Curriculum}
-                href="https://drive.google.com/file/d/1Cvw_K0td_hAhDNizL_lkj2hGiCWjYQIO/view"
+                href={i18n.t("buttonLink.text")}
               >
                 Download CV
               </ButtonAnimated>
@@ -122,11 +125,21 @@ const Home = () => {
             <div>
               <PhraseBox>
                 <img src={Aspas} alt="aspas-img" />
-                <p>{text3}<span><Cursor/></span></p>
+                <p>
+                  {text3}
+                  <span>
+                    <Cursor />
+                  </span>
+                </p>
               </PhraseBox>
               <AutorBox>
                 <img src={Aspas} alt="aspas-img" />
-                <p>{text4}<span><Cursor/></span></p>
+                <p>
+                  {text4}
+                  <span>
+                    <Cursor />
+                  </span>
+                </p>
               </AutorBox>
             </div>
           </PhraseContent>
@@ -134,7 +147,7 @@ const Home = () => {
       </ContainerItens>
       <Footer>
         <FooterContent>
-          <p>{i18n.t('footer.text')}</p>
+          <p>{i18n.t("footer.text")}</p>
         </FooterContent>
       </Footer>
     </Container>

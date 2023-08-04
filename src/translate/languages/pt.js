@@ -7,6 +7,9 @@ const messages = {
         text3: "sobre-mim",
         text4: "contatos",
       },
+      buttonLink: {
+        text: "https://drive.google.com/file/d/1Cvw_K0td_hAhDNizL_lkj2hGiCWjYQIO/view",
+      },
       homeWelcomeTexts: {
         text1: "Olá, me chamo",
         text2: "E eu sou um",
