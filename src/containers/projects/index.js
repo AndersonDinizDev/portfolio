@@ -49,6 +49,7 @@ const Projects = () => {
             repo.name !== "users-api" &&
             repo.name !== "users-app" &&
             repo.name !== "fit-app" &&
+            repo.name !== "viagem-api" &&
             repo.name !== "viagem-app" &&
             repo.name !== "fastburger-api"
         );
