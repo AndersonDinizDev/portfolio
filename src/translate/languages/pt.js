@@ -17,7 +17,7 @@ const messages = {
           "Criação de sites responsivos onde a tecnologia encontra a criatividade.",
       },
       homeAutomaticTexts: {
-        text1: "Desenvolvedor Front-End.",
+        text1: "Desenvolvedor Full Stack.",
         text2: "fã de React.",
         text3: "amante de Café.",
       },

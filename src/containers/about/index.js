@@ -40,16 +40,12 @@ import MainContent from "../../components/maincontent";
 import StatusCard from "../../components/statuscard";
 
 const Contacts = () => {
-
-    const [text] = useTypewriter({
-    words: [
-      i18n.t('homeAutomaticTexts.text1'),
-    ],
+  const [text] = useTypewriter({
+    words: [i18n.t("homeAutomaticTexts.text1")],
     loop: 1,
     typeSpeed: 50,
     deleteSpeed: 50,
   });
-
 
   return (
     <Container>
@@ -68,36 +64,41 @@ const Contacts = () => {
         </div>
       </Media>
       <ContainerItens>
-        <Header/>
+        <Header />
         <MainContent>
           <AboutContent>
             <AboutTitle>
               <div className="aboutTitle">
-              <H1Animation bold="true">
-                <span>/</span>{i18n.t('aboutTitle.text1')}
-              </H1Animation>
+                <H1Animation bold="true">
+                  <span>/</span>
+                  {i18n.t("aboutTitle.text1")}
+                </H1Animation>
               </div>
               <div className="aboutSub">
-              <P>{i18n.t('aboutTitle.text2')}</P>
+                <P>{i18n.t("aboutTitle.text2")}</P>
               </div>
             </AboutTitle>
             <AboutCentralContainer>
               <AboutContentLeft>
-                <p>{i18n.t('aboutCentralText.text')}</p>
+                <p>{i18n.t("aboutCentralText.text")}</p>
               </AboutContentLeft>
               <AboutContentRight>
                 <img src={AboutImage} alt="about-img" />
                 <StatusCard isaboutstatuscard="true">
                   <Retangle></Retangle>
                   <P isaboutpanimated="true">
-                    {text}<span><Cursor/></span>
+                    {text}
+                    <span>
+                      <Cursor />
+                    </span>
                   </P>
                 </StatusCard>
               </AboutContentRight>
             </AboutCentralContainer>
             <SkillsTitle>
               <H1Animation bold="true" isskillsh1="true">
-                <span>/</span>{i18n.t('skillsTittle.text')}
+                <span>/</span>
+                {i18n.t("skillsTittle.text")}
               </H1Animation>
             </SkillsTitle>
             <SkillsContent>
@@ -107,31 +108,44 @@ const Contacts = () => {
               <SkillsRight>
                 <SkillsCard istechnologiescard="true">
                   <div>
-                    <H1 isabouth1="true">{i18n.t('technologiesTexts.text1')}</H1>
+                    <H1 isabouth1="true">
+                      {i18n.t("technologiesTexts.text1")}
+                    </H1>
                   </div>
-                  <P isaboutp="true">JavaScript, TypeScript</P>
+                  <P isaboutp="true">JavaScript, PHP, TypeScript</P>
                 </SkillsCard>
                 <SkillsCard istechnologiescard="true">
                   <div>
-                    <H1 isabouth1="true">{i18n.t('technologiesTexts.text2')}</H1>
+                    <H1 isabouth1="true">
+                      {i18n.t("technologiesTexts.text2")}
+                    </H1>
                   </div>
-                  <P isaboutp="true"> SCSS, Styled-Components, UX Design, Material UI, API </P>
+                  <P isaboutp="true">
+                    {" "}
+                    SCSS, Styled-Components, UX Design, Material UI, API{" "}
+                  </P>
                 </SkillsCard>
                 <SkillsCard istechnologiescard="true">
                   <div>
-                    <H1 isabouth1="true">{i18n.t('technologiesTexts.text3')}</H1>
+                    <H1 isabouth1="true">
+                      {i18n.t("technologiesTexts.text3")}
+                    </H1>
                   </div>
                   <P isaboutp="true"> VSCode, Linux, Figma, Git </P>
                 </SkillsCard>
                 <SkillsCard>
                   <div>
-                    <H1 isabouth1="true">{i18n.t('technologiesTexts.text4')}</H1>
+                    <H1 isabouth1="true">
+                      {i18n.t("technologiesTexts.text4")}
+                    </H1>
                   </div>
                   <P isaboutp="true"> NodeJS, ExpressJS </P>
                 </SkillsCard>
                 <SkillsCard istechnologiescard="true">
                   <div>
-                    <H1 isabouth1="true">{i18n.t('technologiesTexts.text5')}</H1>
+                    <H1 isabouth1="true">
+                      {i18n.t("technologiesTexts.text5")}
+                    </H1>
                   </div>
                   <P isaboutp="true"> ReactJS </P>
                 </SkillsCard>
@@ -139,22 +153,23 @@ const Contacts = () => {
             </SkillsContent>
             <FunFactsTittle>
               <H1Animation bold="true">
-                <span>/</span>{i18n.t('moreAboutMeTittle.text')}
+                <span>/</span>
+                {i18n.t("moreAboutMeTittle.text")}
               </H1Animation>
             </FunFactsTittle>
             <FunFactsContent>
               <FunFactsLeft>
                 <SkillsCard isfunfactscard="true">
-                  <P isfunfactsp="true">{i18n.t('moreAboutMeTexts.text1')}</P>
+                  <P isfunfactsp="true">{i18n.t("moreAboutMeTexts.text1")}</P>
                 </SkillsCard>
                 <SkillsCard isfunfactscard="true">
-                  <P isfunfactsp="true">{i18n.t('moreAboutMeTexts.text2')}</P>
+                  <P isfunfactsp="true">{i18n.t("moreAboutMeTexts.text2")}</P>
                 </SkillsCard>
                 <SkillsCard isfunfactscard="true">
-                  <P isfunfactsp="true">{i18n.t('moreAboutMeTexts.text3')}</P>
+                  <P isfunfactsp="true">{i18n.t("moreAboutMeTexts.text3")}</P>
                 </SkillsCard>
                 <SkillsCard isfunfactscard="true">
-                  <P isfunfactsp="true">{i18n.t('moreAboutMeTexts.text4')}</P>
+                  <P isfunfactsp="true">{i18n.t("moreAboutMeTexts.text4")}</P>
                 </SkillsCard>
               </FunFactsLeft>
               <div>
@@ -166,7 +181,7 @@ const Contacts = () => {
       </ContainerItens>
       <Footer>
         <FooterContent>
-          <p>{i18n.t('footer.text')}</p>
+          <p>{i18n.t("footer.text")}</p>
         </FooterContent>
       </Footer>
     </Container>
