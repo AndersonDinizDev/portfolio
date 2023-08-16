@@ -62,7 +62,7 @@ const About = () => {
               <SkillsCard iscontactcard="true">
                 <P>{i18n.t('contactsCard.text')}</P>
                 <P iscontactp="true"><img src={Tel} alt="telegram-img"/> (21) 98083-9803</P>
-                <P iscontactp="true"><img src={Email} alt="email-img"/> andersondiniz159@gmail.com</P>
+                <P iscontactp="true"><img src={Email} alt="email-img"/> contato.andersonldiniz@gmail.com</P>
               </SkillsCard>
             </ContactContentRight>
             </ContactContentCentral>
