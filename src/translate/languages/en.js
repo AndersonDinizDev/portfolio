@@ -22,7 +22,7 @@ const messages = {
         text3: "Coffe lover.",
       },
       homeStatusCardTexts: {
-        text1: "Currently working on portfólio",
+        text1: "Working on a login system",
         text2: "Currently studyng JavaScript and PHP",
       },
       homeMessage: {
@@ -75,7 +75,7 @@ const messages = {
         text: "Talk to me",
       },
       aboutText: {
-        text: "I am looking for an opportunity to join the IT field. However, if you have another request or question, please don't hesitate to contact me.",
+        text: "Feel free to contact me if you have any questions or wish to make a professional proposal. I am here to assist and answer all your inquiries.",
       },
       contactsCard: {
         text: "Message me here:",

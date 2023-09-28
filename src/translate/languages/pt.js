@@ -22,7 +22,7 @@ const messages = {
         text3: "amante de Café.",
       },
       homeStatusCardTexts: {
-        text1: "Trabalhando em meu Portfólio",
+        text1: "Trabalhando em um sistema de login",
         text2: "Estudando atualmente JavaScript e PHP",
       },
       homeMessage: {
@@ -75,7 +75,7 @@ const messages = {
         text: "Fale comigo",
       },
       aboutText: {
-        text: "Estou em busca de uma oportunidade para ingressar na área de TI. No entanto, se você tiver outra solicitação ou pergunta, não hesite em entrar em contato comigo.",
+        text: "Sinta-se à vontade para entrar em contato comigo caso tenha alguma pergunta ou deseje fazer uma proposta profissional. Estou à disposição para ajudar e responder a todas as suas perguntas.",
       },
       contactsCard: {
         text: "Fale comigo por aqui:",

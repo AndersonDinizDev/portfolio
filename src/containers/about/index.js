@@ -131,7 +131,7 @@ const Contacts = () => {
                       {i18n.t("technologiesTexts.text3")}
                     </H1>
                   </div>
-                  <P isaboutp="true"> VSCode, Linux, Figma, Git </P>
+                  <P isaboutp="true"> VSCode, Docker, Linux, Figma, Git </P>
                 </SkillsCard>
                 <SkillsCard>
                   <div>
