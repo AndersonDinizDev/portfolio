@@ -20,10 +20,10 @@
  </p>
 
 ## ✨ Recursos:
-- [x] Adicionar conexão com a API do GitHub;
-- [x] Adicionar animação com framer-Motion;
-- [x] Adicionar responsividade;
-- [x] Adicionar troca de idioma;
+- [x] Conexão com a API do GitHub;
+- [x] Animação com framer-Motion;
+- [x] Responsividade;
+- [x] Troca de idioma;
 
 ## 💻 Requisitos:
 
