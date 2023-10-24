@@ -22,8 +22,8 @@ const messages = {
         text3: "Coffe lover.",
       },
       homeStatusCardTexts: {
-        text1: "Working on a login system",
-        text2: "Currently studyng JavaScript and PHP",
+        text1: "Current Project: Course Platform",
+        text2: "Currently Studying: AJAX and MYSQL",
       },
       homeMessage: {
         text: "It is not the programming language that defines the programmer, but his logic.",
