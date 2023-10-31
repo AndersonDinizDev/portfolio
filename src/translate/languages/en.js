@@ -47,7 +47,7 @@ const messages = {
         text2: "Who am i?",
       },
       aboutCentralText: {
-        text: "My name is Anderson Diniz, and I'm 26 years old. Currently, I reside in Rio de Janeiro, Brazil. I specialize in developing responsive websites from scratch and transforming them into modern and user-friendly web experiences. Converting my creativity and knowledge into websites has been my passion for almost a year. I have assisted some clients in establishing their online presence. I constantly strive to learn about the latest technologies and frameworks, keeping myself updated to deliver innovative solutions.",
+        text: "My name is Anderson Diniz, I'm 26 years old, and I live in Rio de Janeiro, Brazil. My passion is creating websites that combine attractive design with solid functionality. I have experience in both front-end development, creating responsive and modern websites, and back-end development, ensuring everything works seamlessly behind the scenes. Over the past few years, I've had the privilege of helping various clients establish their online presence, always seeking technological innovations to deliver the best solutions.",
       },
       skillsTittle: {
         text: "Skills",
