@@ -26,6 +26,7 @@ import NodeImg from "../../assets/icons/node.svg";
 import MysImg from "../../assets/icons/mysql.svg";
 import ExpressImg from "../../assets/icons/express.svg";
 import ReactImg from "../../assets/icons/react.svg";
+import MagiicImg from "../../assets/logos/magiic.svg";
 
 import {
   Container,
@@ -196,20 +197,13 @@ const Contacts = () => {
             <FunFactsContent>
               <FunFactsLeft>
                 <SkillsCard isfunfactscard="true">
-                  <P isfunfactsp="true">{i18n.t("moreAboutMeTexts.text1")}</P>
-                </SkillsCard>
-                <SkillsCard isfunfactscard="true">
-                  <P isfunfactsp="true">{i18n.t("moreAboutMeTexts.text2")}</P>
-                </SkillsCard>
-                <SkillsCard isfunfactscard="true">
-                  <P isfunfactsp="true">{i18n.t("moreAboutMeTexts.text3")}</P>
-                </SkillsCard>
-                <SkillsCard isfunfactscard="true">
-                  <P isfunfactsp="true">{i18n.t("moreAboutMeTexts.text4")}</P>
+                <img width="230px" src={MagiicImg} alt="magiic-img"/>
+                  <P isfunfactsp="true" isspace="true"><span>#</span>{i18n.t("moreAboutMeTexts.text1")}</P>
+                  <P isfunfactsp2="true">{i18n.t("experiencesTexts.text1")}</P>
                 </SkillsCard>
               </FunFactsLeft>
               <div>
-                <img src={FunFacts} alt="funfacts-img" />
+                <img id="funfacts-img" src={FunFacts} alt="funfacts-img" />
               </div>
             </FunFactsContent>
           </AboutContent>

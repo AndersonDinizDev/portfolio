@@ -142,7 +142,7 @@ export const FunFactsContent = styled.div`
   margin-top: 26px;
 
   @media (max-width: 767px) {
-    img {
+    #funfacts-img {
       display: none;
     }
   }

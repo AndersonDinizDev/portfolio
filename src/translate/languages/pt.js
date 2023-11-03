@@ -60,13 +60,13 @@ const messages = {
         text5: "Bibliotecas",
       },
       moreAboutMeTittle: {
-        text: "Mais-sobre-mim",
+        text: "Experiências",
       },
       moreAboutMeTexts: {
-        text1: "Eu gosto de pizza e café",
-        text2: "Meu filme favorito é Matrix Reloaded",
-        text3: "Prefiro o inverno do que o verão",
-        text4: "Gosto de caminhar ouvindo música",
+        text1: "Desenvolvedor Full Stack",
+      },
+      experiencesTexts: {
+        text1: "Participo ativamente do time de desenvolvimento e manutenção de aplicações Front-End e Back-End. Minhas responsabilidades incluem a adição de novas funcionalidades e a manutenção da dashboard e backdoor da empresa, garantindo eficiência operacional e segurança.",
       },
       contactsTittle: {
         text: "Contatos",

@@ -60,13 +60,13 @@ const messages = {
         text5: "Libraries",
       },
       moreAboutMeTittle: {
-        text: "More-about-me",
+        text: "Experiences",
       },
       moreAboutMeTexts: {
-        text1: "I Like pizza and coffe",
-        text2: "My favorite movie is Matrix Reloaded",
-        text3: "I like winter more than summer",
-        text4: "I like to walk listening to music",
+        text1: "Full Stack Developer",
+      },
+      experiencesTexts: {
+        text1: "I actively participate in the Front-End and Back-End application development and maintenance team. My responsibilities include adding new features and maintaining the company's dashboard and backdoor, ensuring operational efficiency and security.",
       },
       contactsTittle: {
         text: "Contacts",
