@@ -8,6 +8,24 @@ import Linkedin from "../../assets/linkedin.svg";
 import AboutImage from "../../assets/about.svg";
 import FunFacts from "../../assets/funfacts.svg";
 import SkillsImg from "../../assets/skillsimg.svg";
+import PhpImg from "../../assets/icons/php.svg";
+import JsImg from "../../assets/icons/javascript.svg";
+import TsImg from "../../assets/icons/typescript.svg";
+import SassImg from "../../assets/icons/sass.svg";
+import StyledImg from "../../assets/icons/styled.svg";
+import MatImg from "../../assets/icons/material.svg";
+import JImg from "../../assets/icons/jquery.svg";
+import BtsImg from "../../assets/icons/bootstrap.svg";
+import VsImg from "../../assets/icons/vscode.svg";
+import DkImg from "../../assets/icons/docker.svg";
+import LxImg from "../../assets/icons/linux.svg";
+import FgImg from "../../assets/icons/figma.svg";
+import GtImg from "../../assets/icons/git.svg";
+import GhubImg from "../../assets/icons/github.svg";
+import NodeImg from "../../assets/icons/node.svg";
+import MysImg from "../../assets/icons/mysql.svg";
+import ExpressImg from "../../assets/icons/express.svg";
+import ReactImg from "../../assets/icons/react.svg";
 
 import {
   Container,
@@ -112,7 +130,21 @@ const Contacts = () => {
                       {i18n.t("technologiesTexts.text1")}
                     </H1>
                   </div>
-                  <P isaboutp="true">JavaScript, PHP, TypeScript</P>
+                  <img title="JavaScript" style={{padding: "5px"}} width="40px" src={JsImg} alt="js-img"/>
+                  <img title="TypeScript" style={{padding: "5px"}} width="40px" src={TsImg} alt="ts-img"/>
+                </SkillsCard>
+                <SkillsCard>
+                  <div>
+                    <H1 isabouth1="true">
+                      {i18n.t("technologiesTexts.text4")}
+                    </H1>
+                  </div>
+                  <P isaboutp="true">
+                  <img title="PHP" style={{padding: "5px"}} width="40px" src={PhpImg} alt="php-img"/>
+                  <img title="MYSQL" style={{padding: "5px"}} width="40px" src={MysImg} alt="mysql-img"/>
+                  <img title="NodeJS" style={{padding: "5px"}} width="40px" src={NodeImg} alt="node-img"/>
+                  <img title="Express" style={{padding: "5px"}} width="40px" src={ExpressImg} alt="express-img"/>
+                  </P>
                 </SkillsCard>
                 <SkillsCard istechnologiescard="true">
                   <div>
@@ -121,8 +153,21 @@ const Contacts = () => {
                     </H1>
                   </div>
                   <P isaboutp="true">
-                    {" "}
-                    SCSS, Styled-Components, UX Design, Material UI, API{" "}
+                  <img title="SASS" style={{padding: "5px"}} width="40px" src={SassImg} alt="sass-img"/>
+                  <img title="Styled-Components" style={{padding: "5px"}} width="40px" src={StyledImg} alt="styled-img"/>
+                  <img title="Material-UI" style={{padding: "5px"}} width="40px" src={MatImg} alt="material-img"/>
+                  <img title="JQuery" style={{padding: "5px"}} width="40px" src={JImg} alt="jqery-img"/>
+                  <img title="Bootstrap" style={{padding: "5px"}} width="40px" src={BtsImg} alt="bootstrap-img"/>
+                  </P>
+                </SkillsCard>
+                <SkillsCard istechnologiescard="true">
+                  <div>
+                    <H1 isabouth1="true">
+                      {i18n.t("technologiesTexts.text5")}
+                    </H1>
+                  </div>
+                  <P isaboutp="true">
+                  <img title="ReactJS" style={{padding: "5px"}} width="40px" src={ReactImg} alt="reactjs-img"/>
                   </P>
                 </SkillsCard>
                 <SkillsCard istechnologiescard="true">
@@ -131,23 +176,14 @@ const Contacts = () => {
                       {i18n.t("technologiesTexts.text3")}
                     </H1>
                   </div>
-                  <P isaboutp="true"> VSCode, Docker, Linux, Figma, Git </P>
-                </SkillsCard>
-                <SkillsCard>
-                  <div>
-                    <H1 isabouth1="true">
-                      {i18n.t("technologiesTexts.text4")}
-                    </H1>
-                  </div>
-                  <P isaboutp="true"> NodeJS, ExpressJS </P>
-                </SkillsCard>
-                <SkillsCard istechnologiescard="true">
-                  <div>
-                    <H1 isabouth1="true">
-                      {i18n.t("technologiesTexts.text5")}
-                    </H1>
-                  </div>
-                  <P isaboutp="true"> ReactJS </P>
+                  <P isaboutp="true"> 
+                  <img title="VScode" style={{padding: "5px"}} width="40px" src={VsImg} alt="vscode-img"/>
+                  <img title="Docker" style={{padding: "5px"}} width="40px" src={DkImg} alt="docker-img"/>
+                  <img title="Linux" style={{padding: "5px"}} width="40px" src={LxImg} alt="linux-img"/>
+                  <img title="Figma" style={{padding: "5px"}} width="40px" src={FgImg} alt="figma-img"/>
+                  <img title="Git" style={{padding: "5px"}} width="40px" src={GtImg} alt="git-img"/>
+                  <img title="GitHub" style={{padding: "5px"}} width="40px" src={GhubImg} alt="github-img"/>
+                   </P>
                 </SkillsCard>
               </SkillsRight>
             </SkillsContent>

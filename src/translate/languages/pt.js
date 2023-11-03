@@ -53,8 +53,8 @@ const messages = {
         text: "Habilidades",
       },
       technologiesTexts: {
-        text1: "Linguagens",
-        text2: "Outros",
+        text1: "Front-End",
+        text2: "Framework",
         text3: "Ferramentas",
         text4: "Back-end",
         text5: "Bibliotecas",
