@@ -47,7 +47,8 @@ const Projects = () => {
             repo.name !== "andersondinizdev" &&
             repo.name !== "projects-thumbnail" &&
             repo.name !== "users-api" &&
-            repo.name !== "web-cursos" &&
+            repo.name !== "platform-courses" &&
+            repo.name !== "clone-tabnews" &&
             repo.name !== "users-app"
         );
         const reposWithThumbnails = filteredRepos.map((repo) => {
