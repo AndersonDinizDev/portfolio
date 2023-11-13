@@ -27,6 +27,7 @@ import MysImg from "../../assets/icons/mysql.svg";
 import ExpressImg from "../../assets/icons/express.svg";
 import ReactImg from "../../assets/icons/react.svg";
 import MagiicImg from "../../assets/logos/magiic.svg";
+import AwsImg from "../../assets/icons/aws.svg";
 
 import {
   Container,
@@ -180,6 +181,7 @@ const Contacts = () => {
                   <P isaboutp="true"> 
                   <img title="VScode" style={{padding: "5px"}} width="40px" src={VsImg} alt="vscode-img"/>
                   <img title="Docker" style={{padding: "5px"}} width="40px" src={DkImg} alt="docker-img"/>
+                  <img title="Amazon Web Services" style={{padding: "5px"}} width="40px" src={AwsImg} alt="aws-img"/>
                   <img title="Linux" style={{padding: "5px"}} width="40px" src={LxImg} alt="linux-img"/>
                   <img title="Figma" style={{padding: "5px"}} width="40px" src={FgImg} alt="figma-img"/>
                   <img title="Git" style={{padding: "5px"}} width="40px" src={GtImg} alt="git-img"/>
