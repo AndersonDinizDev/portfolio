@@ -5,7 +5,7 @@ import { i18n } from "../../translate/i18n";
 import GitHub from "../../assets/github.svg";
 import Telegram from "../../assets/telegram.svg";
 import Linkedin from "../../assets/linkedin.svg";
-import AboutImage from "../../assets/about.svg";
+import AboutImage from "../../assets/my.png";
 import FunFacts from "../../assets/funfacts.svg";
 import SkillsImg from "../../assets/skillsimg.svg";
 import PhpImg from "../../assets/icons/php.svg";
@@ -103,7 +103,9 @@ const Contacts = () => {
                 <p>{i18n.t("aboutCentralText.text")}</p>
               </AboutContentLeft>
               <AboutContentRight>
-                <img src={AboutImage} alt="about-img" />
+                <div className="aboutImg">
+                  <img src={AboutImage} alt="about-img" />
+                </div>
                 <StatusCard isaboutstatuscard="true">
                   <Retangle></Retangle>
                   <P isaboutpanimated="true">

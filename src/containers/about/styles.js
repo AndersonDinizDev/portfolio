@@ -61,13 +61,29 @@ export const AboutContentLeft = styled.div`
 `;
 
 export const AboutContentRight = styled.div`
+  .aboutImg {
+    width: 100%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  img {
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+  }
+
   @media (max-width: 767px) {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     img {
-      width: 30%;
+      width: 90%;
     }
   }
 `;
@@ -124,7 +140,6 @@ export const SkillsRight = styled.div`
     padding-left: 0;
     flex-direction: row;
     justify-content: center;
-    
   }
 `;
 export const FunFactsTittle = styled.div`
@@ -155,7 +170,6 @@ export const FunFactsLeft = styled.div`
 
   @media (max-width: 767px) {
     justify-content: center;
-    
   }
 `;
 
