@@ -134,8 +134,8 @@ const Contacts = () => {
                       {i18n.t("technologiesTexts.text1")}
                     </H1>
                   </div>
-                  <img title="JavaScript" style={{padding: "5px"}} width="40px" src={JsImg} alt="js-img"/>
-                  <img title="TypeScript" style={{padding: "5px"}} width="40px" src={TsImg} alt="ts-img"/>
+                  <img className="skillImage" title="JavaScript" style={{padding: "5px"}} width="40px" src={JsImg} alt="js-img"/>
+                  <img className="skillImage" title="TypeScript" style={{padding: "5px"}} width="40px" src={TsImg} alt="ts-img"/>
                 </SkillsCard>
                 <SkillsCard>
                   <div>
@@ -144,10 +144,10 @@ const Contacts = () => {
                     </H1>
                   </div>
                   <P isaboutp="true">
-                  <img title="PHP" style={{padding: "5px"}} width="40px" src={PhpImg} alt="php-img"/>
-                  <img title="MYSQL" style={{padding: "5px"}} width="40px" src={MysImg} alt="mysql-img"/>
-                  <img title="NodeJS" style={{padding: "5px"}} width="40px" src={NodeImg} alt="node-img"/>
-                  <img title="Express" style={{padding: "5px"}} width="40px" src={ExpressImg} alt="express-img"/>
+                  <img className="skillImage" title="PHP" style={{padding: "5px"}} width="40px" src={PhpImg} alt="php-img"/>
+                  <img className="skillImage" title="MYSQL" style={{padding: "5px"}} width="40px" src={MysImg} alt="mysql-img"/>
+                  <img className="skillImage" title="NodeJS" style={{padding: "5px"}} width="40px" src={NodeImg} alt="node-img"/>
+                  <img className="skillImage" title="Express" style={{padding: "5px"}} width="40px" src={ExpressImg} alt="express-img"/>
                   </P>
                 </SkillsCard>
                 <SkillsCard istechnologiescard="true">
@@ -157,11 +157,11 @@ const Contacts = () => {
                     </H1>
                   </div>
                   <P isaboutp="true">
-                  <img title="SASS" style={{padding: "5px"}} width="40px" src={SassImg} alt="sass-img"/>
-                  <img title="Styled-Components" style={{padding: "5px"}} width="40px" src={StyledImg} alt="styled-img"/>
-                  <img title="Material-UI" style={{padding: "5px"}} width="40px" src={MatImg} alt="material-img"/>
-                  <img title="JQuery" style={{padding: "5px"}} width="40px" src={JImg} alt="jqery-img"/>
-                  <img title="Bootstrap" style={{padding: "5px"}} width="40px" src={BtsImg} alt="bootstrap-img"/>
+                  <img className="skillImage" title="SASS" style={{padding: "5px"}} width="40px" src={SassImg} alt="sass-img"/>
+                  <img className="skillImage" title="Styled-Components" style={{padding: "5px"}} width="40px" src={StyledImg} alt="styled-img"/>
+                  <img className="skillImage" title="Material-UI" style={{padding: "5px"}} width="40px" src={MatImg} alt="material-img"/>
+                  <img className="skillImage" title="JQuery" style={{padding: "5px"}} width="40px" src={JImg} alt="jqery-img"/>
+                  <img className="skillImage" title="Bootstrap" style={{padding: "5px"}} width="40px" src={BtsImg} alt="bootstrap-img"/>
                   </P>
                 </SkillsCard>
                 <SkillsCard istechnologiescard="true">
@@ -171,7 +171,7 @@ const Contacts = () => {
                     </H1>
                   </div>
                   <P isaboutp="true">
-                  <img title="ReactJS" style={{padding: "5px"}} width="40px" src={ReactImg} alt="reactjs-img"/>
+                  <img className="skillImage" title="ReactJS" style={{padding: "5px"}} width="40px" src={ReactImg} alt="reactjs-img"/>
                   </P>
                 </SkillsCard>
                 <SkillsCard istechnologiescard="true">
@@ -181,13 +181,13 @@ const Contacts = () => {
                     </H1>
                   </div>
                   <P isaboutp="true"> 
-                  <img title="VScode" style={{padding: "5px"}} width="40px" src={VsImg} alt="vscode-img"/>
-                  <img title="Docker" style={{padding: "5px"}} width="40px" src={DkImg} alt="docker-img"/>
-                  <img title="Amazon Web Services" style={{padding: "5px"}} width="40px" src={AwsImg} alt="aws-img"/>
-                  <img title="Linux" style={{padding: "5px"}} width="40px" src={LxImg} alt="linux-img"/>
-                  <img title="Figma" style={{padding: "5px"}} width="40px" src={FgImg} alt="figma-img"/>
-                  <img title="Git" style={{padding: "5px"}} width="40px" src={GtImg} alt="git-img"/>
-                  <img title="GitHub" style={{padding: "5px"}} width="40px" src={GhubImg} alt="github-img"/>
+                  <img className="skillImage" title="VScode" style={{padding: "5px"}} width="40px" src={VsImg} alt="vscode-img"/>
+                  <img className="skillImage" title="Docker" style={{padding: "5px"}} width="40px" src={DkImg} alt="docker-img"/>
+                  <img className="skillImage" title="Amazon Web Services" style={{padding: "5px"}} width="40px" src={AwsImg} alt="aws-img"/>
+                  <img className="skillImage" title="Linux" style={{padding: "5px"}} width="40px" src={LxImg} alt="linux-img"/>
+                  <img className="skillImage" title="Figma" style={{padding: "5px"}} width="40px" src={FgImg} alt="figma-img"/>
+                  <img className="skillImage" title="Git" style={{padding: "5px"}} width="40px" src={GtImg} alt="git-img"/>
+                  <img className="skillImage" title="GitHub" style={{padding: "5px"}} width="40px" src={GhubImg} alt="github-img"/>
                    </P>
                 </SkillsCard>
               </SkillsRight>
