@@ -72,8 +72,6 @@ const Projects = () => {
     fetchRepoData();
   }, []);
 
-  console.log(repo);
-
   return (
     <Container>
       <Media>
