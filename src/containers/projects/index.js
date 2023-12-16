@@ -51,6 +51,13 @@ const Projects = () => {
             repo.name !== "clone-tabnews" &&
             repo.name !== "users-app"
         );
+
+        const sortedRepos = filteredRepos.sort(
+          (a, b) => new Date(b.created_at) - new Date(a.created_at)
+        );
+
+        setRepo(sortedRepos);
+
         const reposWithThumbnails = filteredRepos.map((repo) => {
           return {
             ...repo,
@@ -64,6 +71,8 @@ const Projects = () => {
     }
     fetchRepoData();
   }, []);
+
+  console.log(repo);
 
   return (
     <Container>
