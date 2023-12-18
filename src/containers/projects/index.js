@@ -49,7 +49,8 @@ const Projects = () => {
             repo.name !== "users-api" &&
             repo.name !== "platform-courses" &&
             repo.name !== "clone-tabnews" &&
-            repo.name !== "users-app"
+            repo.name !== "users-app" &&
+            repo.name !== "timetrace-hub"
         );
 
         const sortedRepos = filteredRepos.sort(
