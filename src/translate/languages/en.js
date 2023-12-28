@@ -23,7 +23,7 @@ const messages = {
       },
       homeStatusCardTexts: {
         text1: "Current Project: Course Platform",
-        text2: "Currently Studying: AJAX and MYSQL",
+        text2: "Currently studying: Software Architecture",
       },
       homeMessage: {
         text: "It is not the programming language that defines the programmer, but his logic.",
@@ -66,7 +66,8 @@ const messages = {
         text1: "Full Stack Developer",
       },
       experiencesTexts: {
-        text1: "I actively participate in the Front-End and Back-End application development and maintenance team. My responsibilities include adding new features and maintaining the company's dashboard and backdoor, ensuring operational efficiency and security.",
+        text1:
+          "I actively participate in the Front-End and Back-End application development and maintenance team. My responsibilities include adding new features and maintaining the company's dashboard and backdoor, ensuring operational efficiency and security.",
       },
       contactsTittle: {
         text: "Contacts",

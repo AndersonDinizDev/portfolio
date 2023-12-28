@@ -23,7 +23,7 @@ const messages = {
       },
       homeStatusCardTexts: {
         text1: "Projeto Atual: Plataforma de Cursos",
-        text2: "Estudando Atualmente: AJAX e MYSQL",
+        text2: "Estudando Atualmente: Arquitetura de Software",
       },
       homeMessage: {
         text: "Não é a linguagem de programação que define o programador, mas sim sua lógica.",
