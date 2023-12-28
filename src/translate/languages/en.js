@@ -23,7 +23,7 @@ const messages = {
       },
       homeStatusCardTexts: {
         text1: "Current Project: Course Platform",
-        text2: "Currently studying: Software Architecture",
+        text2: "Studying: Software Architecture",
       },
       homeMessage: {
         text: "It is not the programming language that defines the programmer, but his logic.",
