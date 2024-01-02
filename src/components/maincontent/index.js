@@ -28,6 +28,14 @@ function MainContent({ children, ...props }) {
     border-color: red;
   `;
 
+  useEffect(() => {
+    if (!conteudoCarregado) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "visible";
+    }
+  });
+
   return (
     <AnimatePresence>
       {conteudoCarregado ? (
