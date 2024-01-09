@@ -78,7 +78,7 @@ const Contacts = () => {
           <MediaButton href="https://github.com/andersondinizdev">
             <img src={GitHub} alt="github-icon" />
           </MediaButton>
-          <MediaButton href="https://t.me/andersondiniz159">
+          <MediaButton href="https://t.me/andersondinizdev">
             <img src={Telegram} alt="telegram-icon" />
           </MediaButton>
         </div>

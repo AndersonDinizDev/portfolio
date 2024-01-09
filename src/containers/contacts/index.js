@@ -3,7 +3,6 @@ import GitHub from "../../assets/github.svg";
 import Telegram from "../../assets/telegram.svg";
 import Linkedin from "../../assets/linkedin.svg";
 import Email from "../../assets/email.svg";
-import Tel from "../../assets/tel.svg";
 
 import {
   Container,
@@ -35,7 +34,7 @@ const About = () => {
         <div>
         <MediaButton href="https://www.linkedin.com/in/andersonldiniz/"><img src={Linkedin} alt="linkedin-icon" /></MediaButton>
         <MediaButton href="https://github.com/andersondinizdev"><img src={GitHub} alt="github-icon" /></MediaButton>
-        <MediaButton href="https://t.me/andersondiniz159"><img src={Telegram} alt="telegram-icon" /></MediaButton>
+        <MediaButton href="https://t.me/andersondinizdev"><img src={Telegram} alt="telegram-icon" /></MediaButton>
         </div>
       </Media>
       <ContainerItens>
@@ -61,7 +60,6 @@ const About = () => {
             <ContactContentRight>
               <SkillsCard iscontactcard="true">
                 <P>{i18n.t('contactsCard.text')}</P>
-                <P iscontactp="true"><img src={Tel} alt="telegram-img"/> (21) 98083-9803</P>
                 <P iscontactp="true"><img src={Email} alt="email-img"/> contato.andersonldiniz@gmail.com</P>
               </SkillsCard>
             </ContactContentRight>
