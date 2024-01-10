@@ -50,7 +50,7 @@ const Projects = () => {
             repo.name !== "platform-courses" &&
             repo.name !== "clone-tabnews" &&
             repo.name !== "users-app" &&
-            repo.name !== "collabpress-api"
+            repo.name !== "laravel-10-teste"
         );
 
         const sortedRepos = filteredRepos.sort(
