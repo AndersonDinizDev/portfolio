@@ -82,7 +82,7 @@ const messages = {
         text: "Message me here:",
       },
       footer: {
-        text: "© Made by Anderson Diniz - 2023",
+        text: "© Made by Anderson Diniz - 2024",
       },
     },
   },
