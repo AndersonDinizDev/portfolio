@@ -81,7 +81,7 @@ const messages = {
         text: "Fale comigo por aqui:",
       },
       footer: {
-        text: "© Feito por Anderson Diniz - 2023",
+        text: "© Feito por Anderson Diniz - 2024",
       },
     },
   },
