@@ -28,6 +28,7 @@ import ExpressImg from "../../assets/icons/express.svg";
 import ReactImg from "../../assets/icons/react.svg";
 import MagiicImg from "../../assets/logos/magiic.svg";
 import AwsImg from "../../assets/icons/aws.svg";
+import LaravelImg from "../../assets/icons/laravel.svg";
 
 import {
   Container,
@@ -145,9 +146,8 @@ const Contacts = () => {
                   </div>
                   <P isaboutp="true">
                   <img className="skillImage" title="PHP" style={{padding: "5px"}} width="40px" src={PhpImg} alt="php-img"/>
-                  <img className="skillImage" title="MYSQL" style={{padding: "5px"}} width="40px" src={MysImg} alt="mysql-img"/>
-                  <img className="skillImage" title="NodeJS" style={{padding: "5px"}} width="40px" src={NodeImg} alt="node-img"/>
-                  <img className="skillImage" title="Express" style={{padding: "5px"}} width="40px" src={ExpressImg} alt="express-img"/>
+                  <img className="skillImage" title="Laravel" style={{padding: "5px"}} width="40px" src={LaravelImg} alt="laravel-img"/>
+                  <img className="skillImage" title="MySQL" style={{padding: "5px"}} width="40px" src={MysImg} alt="mysql-img"/>
                   </P>
                 </SkillsCard>
                 <SkillsCard istechnologiescard="true">
