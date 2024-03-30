@@ -51,7 +51,8 @@ const Projects = () => {
             repo.name !== "clone-tabnews" &&
             repo.name !== "users-app" &&
             repo.name !== "laravel-10-teste" &&
-            repo.name !== "laravel-api-login-register"
+            repo.name !== "laravel-api-login-register" &&
+            repo.name !== "setup-docker-laravel-main"
         );
 
         const sortedRepos = filteredRepos.sort(
