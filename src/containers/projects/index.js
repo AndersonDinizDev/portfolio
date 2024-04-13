@@ -53,7 +53,8 @@ const Projects = () => {
             repo.name !== "laravel-10-teste" &&
             repo.name !== "laravel-api-login-register" &&
             repo.name !== "chatFox-api"  &&
-            repo.name !== "chatFox" 
+            repo.name !== "chatFox" &&
+            repo.name !== "react-docker-base" 
         );
 
         const sortedRepos = filteredRepos.sort(
