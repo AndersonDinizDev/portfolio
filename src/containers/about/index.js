@@ -99,7 +99,15 @@ const Contacts = () => {
             </AboutTitle>
             <AboutCentralContainer>
               <AboutContentLeft>
-                <p>{i18n.t("aboutCentralText.text")}</p>
+                <p>
+                  <br />
+                  {i18n.t("aboutCentralText.text")} <br />
+                  <br />
+                  {i18n.t("aboutCentralText.text2")}
+                  <br />
+                  <br />
+                  {i18n.t("aboutCentralText.text3")}
+                </p>
               </AboutContentLeft>
               <AboutContentRight>
                 <div className="aboutImg">
@@ -133,8 +141,22 @@ const Contacts = () => {
                       {i18n.t("technologiesTexts.text1")}
                     </H1>
                   </div>
-                  <img className="skillImage" title="JavaScript" style={{padding: "5px"}} width="40px" src={JsImg} alt="js-img"/>
-                  <img className="skillImage" title="TypeScript" style={{padding: "5px"}} width="40px" src={TsImg} alt="ts-img"/>
+                  <img
+                    className="skillImage"
+                    title="JavaScript"
+                    style={{ padding: "5px" }}
+                    width="40px"
+                    src={JsImg}
+                    alt="js-img"
+                  />
+                  <img
+                    className="skillImage"
+                    title="TypeScript"
+                    style={{ padding: "5px" }}
+                    width="40px"
+                    src={TsImg}
+                    alt="ts-img"
+                  />
                 </SkillsCard>
                 <SkillsCard>
                   <div>
@@ -143,9 +165,30 @@ const Contacts = () => {
                     </H1>
                   </div>
                   <P isaboutp="true">
-                  <img className="skillImage" title="PHP" style={{padding: "5px"}} width="40px" src={PhpImg} alt="php-img"/>
-                  <img className="skillImage" title="Laravel" style={{padding: "5px"}} width="40px" src={LaravelImg} alt="laravel-img"/>
-                  <img className="skillImage" title="MySQL" style={{padding: "5px"}} width="40px" src={MysImg} alt="mysql-img"/>
+                    <img
+                      className="skillImage"
+                      title="PHP"
+                      style={{ padding: "5px" }}
+                      width="40px"
+                      src={PhpImg}
+                      alt="php-img"
+                    />
+                    <img
+                      className="skillImage"
+                      title="Laravel"
+                      style={{ padding: "5px" }}
+                      width="40px"
+                      src={LaravelImg}
+                      alt="laravel-img"
+                    />
+                    <img
+                      className="skillImage"
+                      title="MySQL"
+                      style={{ padding: "5px" }}
+                      width="40px"
+                      src={MysImg}
+                      alt="mysql-img"
+                    />
                   </P>
                 </SkillsCard>
                 <SkillsCard istechnologiescard="true">
@@ -155,11 +198,46 @@ const Contacts = () => {
                     </H1>
                   </div>
                   <P isaboutp="true">
-                  <img className="skillImage" title="SASS" style={{padding: "5px"}} width="40px" src={SassImg} alt="sass-img"/>
-                  <img className="skillImage" title="Styled-Components" style={{padding: "5px"}} width="40px" src={StyledImg} alt="styled-img"/>
-                  <img className="skillImage" title="Material-UI" style={{padding: "5px"}} width="40px" src={MatImg} alt="material-img"/>
-                  <img className="skillImage" title="JQuery" style={{padding: "5px"}} width="40px" src={JImg} alt="jqery-img"/>
-                  <img className="skillImage" title="Bootstrap" style={{padding: "5px"}} width="40px" src={BtsImg} alt="bootstrap-img"/>
+                    <img
+                      className="skillImage"
+                      title="SASS"
+                      style={{ padding: "5px" }}
+                      width="40px"
+                      src={SassImg}
+                      alt="sass-img"
+                    />
+                    <img
+                      className="skillImage"
+                      title="Styled-Components"
+                      style={{ padding: "5px" }}
+                      width="40px"
+                      src={StyledImg}
+                      alt="styled-img"
+                    />
+                    <img
+                      className="skillImage"
+                      title="Material-UI"
+                      style={{ padding: "5px" }}
+                      width="40px"
+                      src={MatImg}
+                      alt="material-img"
+                    />
+                    <img
+                      className="skillImage"
+                      title="JQuery"
+                      style={{ padding: "5px" }}
+                      width="40px"
+                      src={JImg}
+                      alt="jqery-img"
+                    />
+                    <img
+                      className="skillImage"
+                      title="Bootstrap"
+                      style={{ padding: "5px" }}
+                      width="40px"
+                      src={BtsImg}
+                      alt="bootstrap-img"
+                    />
                   </P>
                 </SkillsCard>
                 <SkillsCard istechnologiescard="true">
@@ -169,7 +247,14 @@ const Contacts = () => {
                     </H1>
                   </div>
                   <P isaboutp="true">
-                  <img className="skillImage" title="ReactJS" style={{padding: "5px"}} width="40px" src={ReactImg} alt="reactjs-img"/>
+                    <img
+                      className="skillImage"
+                      title="ReactJS"
+                      style={{ padding: "5px" }}
+                      width="40px"
+                      src={ReactImg}
+                      alt="reactjs-img"
+                    />
                   </P>
                 </SkillsCard>
                 <SkillsCard istechnologiescard="true">
@@ -178,15 +263,64 @@ const Contacts = () => {
                       {i18n.t("technologiesTexts.text3")}
                     </H1>
                   </div>
-                  <P isaboutp="true"> 
-                  <img className="skillImage" title="VScode" style={{padding: "5px"}} width="40px" src={VsImg} alt="vscode-img"/>
-                  <img className="skillImage" title="Docker" style={{padding: "5px"}} width="40px" src={DkImg} alt="docker-img"/>
-                  <img className="skillImage" title="Amazon Web Services" style={{padding: "5px"}} width="40px" src={AwsImg} alt="aws-img"/>
-                  <img className="skillImage" title="Linux" style={{padding: "5px"}} width="40px" src={LxImg} alt="linux-img"/>
-                  <img className="skillImage" title="Figma" style={{padding: "5px"}} width="40px" src={FgImg} alt="figma-img"/>
-                  <img className="skillImage" title="Git" style={{padding: "5px"}} width="40px" src={GtImg} alt="git-img"/>
-                  <img className="skillImage" title="GitHub" style={{padding: "5px"}} width="40px" src={GhubImg} alt="github-img"/>
-                   </P>
+                  <P isaboutp="true">
+                    <img
+                      className="skillImage"
+                      title="VScode"
+                      style={{ padding: "5px" }}
+                      width="40px"
+                      src={VsImg}
+                      alt="vscode-img"
+                    />
+                    <img
+                      className="skillImage"
+                      title="Docker"
+                      style={{ padding: "5px" }}
+                      width="40px"
+                      src={DkImg}
+                      alt="docker-img"
+                    />
+                    <img
+                      className="skillImage"
+                      title="Amazon Web Services"
+                      style={{ padding: "5px" }}
+                      width="40px"
+                      src={AwsImg}
+                      alt="aws-img"
+                    />
+                    <img
+                      className="skillImage"
+                      title="Linux"
+                      style={{ padding: "5px" }}
+                      width="40px"
+                      src={LxImg}
+                      alt="linux-img"
+                    />
+                    <img
+                      className="skillImage"
+                      title="Figma"
+                      style={{ padding: "5px" }}
+                      width="40px"
+                      src={FgImg}
+                      alt="figma-img"
+                    />
+                    <img
+                      className="skillImage"
+                      title="Git"
+                      style={{ padding: "5px" }}
+                      width="40px"
+                      src={GtImg}
+                      alt="git-img"
+                    />
+                    <img
+                      className="skillImage"
+                      title="GitHub"
+                      style={{ padding: "5px" }}
+                      width="40px"
+                      src={GhubImg}
+                      alt="github-img"
+                    />
+                  </P>
                 </SkillsCard>
               </SkillsRight>
             </SkillsContent>
@@ -199,8 +333,11 @@ const Contacts = () => {
             <FunFactsContent>
               <FunFactsLeft>
                 <SkillsCard isfunfactscard="true">
-                <img width="230px" src={MagiicImg} alt="magiic-img"/>
-                  <P isfunfactsp="true" isspace="true"><span>#</span>{i18n.t("moreAboutMeTexts.text1")}</P>
+                  <img width="230px" src={MagiicImg} alt="magiic-img" />
+                  <P isfunfactsp="true" isspace="true">
+                    <span>#</span>
+                    {i18n.t("moreAboutMeTexts.text1")}
+                  </P>
                   <P isfunfactsp2="true">{i18n.t("experiencesTexts.text1")}</P>
                 </SkillsCard>
               </FunFactsLeft>

@@ -13,13 +13,12 @@ const messages = {
       homeWelcomeTexts: {
         text1: "Olá, me chamo",
         text2: "E eu sou um",
-        text3:
-          "Criação de sites responsivos onde a tecnologia encontra a criatividade.",
+        text3: "Focado na criação de soluções sólidas e eficientes.",
       },
       homeAutomaticTexts: {
-        text1: "Desenvolvedor Full Stack.",
-        text2: "fã de React.",
-        text3: "amante de Café.",
+        text1: "Desenvolvedor Back-end.",
+        text2: "Artesão da Web.",
+        text3: "Amante de Café.",
       },
       homeStatusCardTexts: {
         text1: "Projeto Atual: Plataforma de Cursos",
@@ -47,7 +46,11 @@ const messages = {
         text2: "Quem sou eu?",
       },
       aboutCentralText: {
-        text: "Me chamo Anderson Diniz, tenho 26 anos e moro no Rio de Janeiro, Brasil. Minha paixão é criar sites que combinam design atraente e funcionalidade sólida. Tenho experiência tanto no desenvolvimento front-end, criando sites responsivos e modernos, quanto no back-end, garantindo que tudo funcione perfeitamente nos bastidores. Nos últimos anos, tive o privilégio de ajudar diversos clientes a estabelecerem sua presença online, sempre buscando inovações tecnológicas para entregar as melhores soluções.",
+        text: "Me chamo Anderson Diniz, tenho 27 anos e moro no Rio de Janeiro, Brasil. Sou dedicado a desenvolver a estrutura invisível que torna as aplicações web possíveis.",
+        text2:
+          "Minha especialidade está em criar sistemas robustos e eficientes nos bastidores da web. Tenho uma vasta experiência em lidar com os desafios do back-end, garantindo que os sistemas funcionem perfeitamente e de forma confiável.",
+        text3:
+          "Ao longo dos anos, tive o privilégio de auxiliar diversos clientes a construírem suas plataformas online, sempre buscando por soluções inovadoras que impulsionem seus negócios.",
       },
       skillsTittle: {
         text: "Habilidades",
@@ -66,7 +69,8 @@ const messages = {
         text1: "Desenvolvedor Full Stack",
       },
       experiencesTexts: {
-        text1: "Participo ativamente do time de desenvolvimento e manutenção de aplicações Front-End e Back-End. Minhas responsabilidades incluem a adição de novas funcionalidades e a manutenção da dashboard e backdoor da empresa, garantindo eficiência operacional e segurança.",
+        text1:
+          "Participo ativamente do time de desenvolvimento e manutenção de aplicações Front-End e Back-End. Minhas responsabilidades incluem a adição de novas funcionalidades e a manutenção da dashboard e backdoor da empresa, garantindo eficiência operacional e segurança.",
       },
       contactsTittle: {
         text: "Contatos",

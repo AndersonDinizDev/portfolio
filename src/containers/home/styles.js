@@ -24,10 +24,12 @@ export const HomeContentLeft = styled.div`
   display: flex;
   flex-direction: column;
   gap: 24px;
+  width: 600px;
 
   @media (max-width: 767px) {
     justify-content: center;
     align-items: center;
+    width: auto;
   }
 `;
 

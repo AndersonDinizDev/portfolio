@@ -11,43 +11,46 @@ const messages = {
         text: "https://drive.google.com/file/d/1HVyWR7A-fiTppFJNKxO33eg-lVpmXkPQ/view",
       },
       homeWelcomeTexts: {
-        text1: "Hello, I`am",
-        text2: "And I' am a",
-        text3:
-          "Creating responsive websites where technology meets creativity.",
+        text1: "Hello, my name is",
+        text2: "And I am a",
+        text3: "Focused on creating solid and efficient solutions.",
       },
       homeAutomaticTexts: {
-        text1: "Full Stack Developer.",
-        text2: "React fan.",
-        text3: "Coffe lover.",
+        text1: "Back-end Developer.",
+        text2: "Web Artisan.",
+        text3: "Coffee lover.",
       },
       homeStatusCardTexts: {
-        text1: "Current Project: Course Platform",
+        text1: "Current Project: Courses Platform",
         text2: "Studying: Software Architecture",
       },
       homeMessage: {
-        text: "It is not the programming language that defines the programmer, but his logic.",
+        text: "It's not the programming language that defines the programmer, but their logic.",
       },
       projectsTittle: {
         text1: "Projects",
         text2: "List of my projects",
       },
       projectsList: {
-        text: "complete-apps",
+        text: "applications",
       },
       projectsCardText: {
         text: "Technology: ",
       },
       projectsButtonText: {
-        text1: "Live",
+        text1: "View",
         text2: "Repository",
       },
       aboutTitle: {
         text1: "About-me",
-        text2: "Who am i?",
+        text2: "Who am I?",
       },
       aboutCentralText: {
-        text: "My name is Anderson Diniz, I'm 26 years old, and I live in Rio de Janeiro, Brazil. My passion is creating websites that combine attractive design with solid functionality. I have experience in both front-end development, creating responsive and modern websites, and back-end development, ensuring everything works seamlessly behind the scenes. Over the past few years, I've had the privilege of helping various clients establish their online presence, always seeking technological innovations to deliver the best solutions.",
+        text: "My name is Anderson Diniz, I'm 27 years old, and I live in Rio de Janeiro, Brazil. I'm dedicated to developing the invisible structure that makes web applications possible.",
+        text2:
+          "My expertise lies in creating robust and efficient systems behind the web. I have extensive experience in tackling back-end challenges, ensuring that systems work perfectly and reliably.",
+        text3:
+          "Over the years, I've had the privilege of assisting various clients in building their online platforms, always seeking innovative solutions to drive their businesses forward.",
       },
       skillsTittle: {
         text: "Skills",
@@ -56,7 +59,7 @@ const messages = {
         text1: "Front-End",
         text2: "Framework",
         text3: "Tools",
-        text4: "Back-End",
+        text4: "Back-end",
         text5: "Libraries",
       },
       moreAboutMeTittle: {
@@ -67,19 +70,19 @@ const messages = {
       },
       experiencesTexts: {
         text1:
-          "I actively participate in the Front-End and Back-End application development and maintenance team. My responsibilities include adding new features and maintaining the company's dashboard and backdoor, ensuring operational efficiency and security.",
+          "I actively participate in the development and maintenance team of Front-End and Back-End applications. My responsibilities include adding new features and maintaining the company's dashboard and backdoor, ensuring operational efficiency and security.",
       },
       contactsTittle: {
         text: "Contacts",
       },
       contactsSub: {
-        text: "Talk to me",
+        text: "Get in touch",
       },
       aboutText: {
-        text: "Feel free to contact me if you have any questions or wish to make a professional proposal. I am here to assist and answer all your inquiries.",
+        text: "Feel free to contact me if you have any questions or would like to make a professional proposal. I'm here to help and answer all your questions.",
       },
       contactsCard: {
-        text: "Message me here:",
+        text: "Contact me here:",
       },
       footer: {
         text: "© Made by Anderson Diniz - 2024",
