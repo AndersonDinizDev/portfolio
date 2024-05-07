@@ -21,7 +21,7 @@ const messages = {
         text3: "Coffee lover.",
       },
       homeStatusCardTexts: {
-        text1: "Current Project: Courses Platform",
+        text1: "Current Project: Online Chat",
         text2: "Studying: Software Architecture",
       },
       homeMessage: {
@@ -67,10 +67,19 @@ const messages = {
       },
       moreAboutMeTexts: {
         text1: "Full Stack Developer",
+        text2: "Back-end Developer",
       },
       experiencesTexts: {
         text1:
-          "I actively participate in the development and maintenance team of Front-End and Back-End applications. My responsibilities include adding new features and maintaining the company's dashboard and backdoor, ensuring operational efficiency and security.",
+          "I actively contribute to the development and maintenance team of Front-End and Back-End applications.",
+        text2:
+          "My responsibilities include implementing new features and maintaining the company's dashboard and backdoor, prioritizing operational efficiency and security.",
+        text3:
+          "My role involves creating and maintaining the essential systems for the location platform, including configuring the API in the cloud.",
+        text4:
+          "I am particularly dedicated to the development of reliable and secure APIs, ensuring the effective functioning of the platform.",
+        text5:
+          "Additionally, I actively collaborate with the team to ensure the continuous excellence of our location services.",
       },
       contactsTittle: {
         text: "Contacts",

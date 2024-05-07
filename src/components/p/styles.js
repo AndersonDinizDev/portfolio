@@ -28,6 +28,8 @@ text-align: ${props => props.isfunfactsp ? 'justify' : ''};
 text-align: ${props => props.isfunfactsp2 ? 'justify' : ''};
 font-size: ${props => props.isgitptech ? '0.9em' : ''};
 margin-top: ${props => props.isspace ? '10px' : ''};
+font-size: ${props => props.isfunfactsp2 ? '14px' : ''};
+text-align: ${props => props.isfunfactsp2 ? 'left' : ''};;
 
 span {
     color: ${props => props.isgitptech ? '#ABB2BF' : ''};

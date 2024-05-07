@@ -27,6 +27,7 @@ import ReactImg from "../../assets/icons/react.svg";
 import MagiicImg from "../../assets/logos/magiic.svg";
 import AwsImg from "../../assets/icons/aws.svg";
 import LaravelImg from "../../assets/icons/laravel.svg";
+import GenesisImg from "../../assets/logos/genesis.png";
 
 import {
   Container,
@@ -333,12 +334,35 @@ const Contacts = () => {
             <FunFactsContent>
               <FunFactsLeft>
                 <SkillsCard isfunfactscard="true">
+                  <img width="230px" src={GenesisImg} alt="genesis-img" />
+                  <P isfunfactsp="true" isspace="true">
+                    <span>#</span>
+                    {i18n.t("moreAboutMeTexts.text2")}
+                  </P>
+                  <P isfunfactsp2="true">
+                  <br />
+                    {i18n.t("experiencesTexts.text3")}
+                    <br />
+                    <br />
+                    {i18n.t("experiencesTexts.text4")}
+                    <br />
+                    <br />
+                    {i18n.t("experiencesTexts.text5")}
+                  </P>
+                </SkillsCard>
+                <SkillsCard isfunfactscard="true">
                   <img width="230px" src={MagiicImg} alt="magiic-img" />
                   <P isfunfactsp="true" isspace="true">
                     <span>#</span>
                     {i18n.t("moreAboutMeTexts.text1")}
                   </P>
-                  <P isfunfactsp2="true">{i18n.t("experiencesTexts.text1")}</P>
+                  <P isfunfactsp2="true">
+                  <br />
+                    {i18n.t("experiencesTexts.text1")}
+                    <br />
+                    <br />
+                    {i18n.t("experiencesTexts.text2")}
+                  </P>
                 </SkillsCard>
               </FunFactsLeft>
               <div>

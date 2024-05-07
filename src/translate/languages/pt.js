@@ -21,7 +21,7 @@ const messages = {
         text3: "Amante de Café.",
       },
       homeStatusCardTexts: {
-        text1: "Projeto Atual: Plataforma de Cursos",
+        text1: "Projeto Atual: Chat Online",
         text2: "Estudando: Arquitetura de Software",
       },
       homeMessage: {
@@ -67,10 +67,16 @@ const messages = {
       },
       moreAboutMeTexts: {
         text1: "Desenvolvedor Full Stack",
+        text2: "Desenvolvedor Back-end",
       },
       experiencesTexts: {
         text1:
-          "Participo ativamente do time de desenvolvimento e manutenção de aplicações Front-End e Back-End. Minhas responsabilidades incluem a adição de novas funcionalidades e a manutenção da dashboard e backdoor da empresa, garantindo eficiência operacional e segurança.",
+          "Contribuo ativamente para o time de desenvolvimento e manutenção de aplicações Front-End e Back-End.",
+        text2: "Minhas responsabilidades incluem a implementação de novas funcionalidades e a manutenção da dashboard e backdoor da empresa, priorizando eficiência operacional e segurança.",
+        text3:
+          "Minha função abrange a criação e manutenção dos sistemas essenciais para a plataforma de localização, incluindo a configuração da API na nuvem.",
+        text4: "Dedico-me especialmente ao desenvolvimento de APIs confiáveis e seguras, assegurando o funcionamento eficaz da plataforma.",
+        text5: "Além disso, colaboro ativamente com a equipe para garantir a excelência contínua de nossos serviços de localização."
       },
       contactsTittle: {
         text: "Contatos",
