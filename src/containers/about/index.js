@@ -112,7 +112,7 @@ const Contacts = () => {
               </AboutContentLeft>
               <AboutContentRight>
                 <div className="aboutImg">
-                  <img src={AboutImage} alt="about-img" />
+                  <img id="aboutImg" src={AboutImage} alt="about-img" />
                 </div>
                 <StatusCard isaboutstatuscard="true">
                   <Retangle></Retangle>
@@ -340,7 +340,7 @@ const Contacts = () => {
                     {i18n.t("moreAboutMeTexts.text2")}
                   </P>
                   <P isfunfactsp2="true">
-                  <br />
+                    <br />
                     {i18n.t("experiencesTexts.text3")}
                     <br />
                     <br />
@@ -357,7 +357,7 @@ const Contacts = () => {
                     {i18n.t("moreAboutMeTexts.text1")}
                   </P>
                   <P isfunfactsp2="true">
-                  <br />
+                    <br />
                     {i18n.t("experiencesTexts.text1")}
                     <br />
                     <br />

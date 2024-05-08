@@ -1,4 +1,20 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const Flying = keyframes`
+
+0% {
+  transform: translateY(0);
+}
+
+50% {
+  transform: translateY(-20px);
+}
+
+100% {
+  transform: translateY(0);
+}
+
+`;
 
 export const Container = styled.div`
   background-color: #1e1e1e;
@@ -75,6 +91,9 @@ export const AboutContentRight = styled.div`
     width: 300px;
     height: 300px;
     border-radius: 50%;
+    transition: 0.7s;
+    animation: ${Flying} 4s ease-in-out infinite;
+    animation-delay: 1s, 1s;
   }
 
   @media (max-width: 767px) {
