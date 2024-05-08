@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { MainContent as MainContentComponent } from "./styles";
 import { css } from "@emotion/react";
-import { RingLoader } from "react-spinners";
+import { HashLoader } from "react-spinners";
 
 function MainContent({ children, ...props }) {
   const [conteudoCarregado, setConteudoCarregado] = useState(false);
@@ -54,11 +54,11 @@ function MainContent({ children, ...props }) {
             height: "100vh",
           }}
         >
-          <RingLoader
+          <HashLoader
             color={"#c775d0"}
             loading={!conteudoCarregado}
             css={override}
-            size={150}
+            size={60}
           />
         </div>
       )}
