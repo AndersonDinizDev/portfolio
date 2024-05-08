@@ -6,7 +6,7 @@ export const Header = styled.div`
   padding-top: 32px;
   width: 100%;
   z-index: 1;
-  background-color: #1e1e1e;
+  background-color: transparent;
 
   .bars {
     display: none;

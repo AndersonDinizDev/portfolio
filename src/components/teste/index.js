@@ -37,33 +37,34 @@ const ParticlesComponent = (props) => {
       interactivity: {
         events: {
           onClick: {
-            enable: true,
-            mode: "repulse",
+            enable: false,
+            mode: "push",
           },
           onHover: {
             enable: true,
-            mode: "grab",
+            mode: "repulse",
           },
+          resize: true,
         },
         modes: {
           push: {
-            distance: 200,
-            duration: 15,
+            quantity: 90,
           },
-          grab: {
-            distance: 150,
+          repulse: {
+            distance: 200,
+            duration: 0.4,
           },
         },
       },
       particles: {
         color: {
-          value: "#FFFFFF",
+          value: "#8f5b9e",
         },
         links: {
-          color: "#FFFFFF",
+          color: "#ABB2BF",
           distance: 150,
           enable: true,
-          opacity: 0.3,
+          opacity: 0.5,
           width: 1,
         },
         move: {
@@ -72,24 +73,25 @@ const ParticlesComponent = (props) => {
           outModes: {
             default: "bounce",
           },
-          random: true,
+          random: false,
           speed: 1,
           straight: false,
         },
         number: {
           density: {
             enable: true,
+            area: 800,
           },
-          value: 150,
+          value: 80,
         },
         opacity: {
-          value: 1.0,
+          value: 0.5,
         },
         shape: {
           type: "circle",
         },
         size: {
-          value: { min: 1, max: 3 },
+          value: { min: 1, max: 5 },
         },
       },
       detectRetina: true,
