@@ -54,7 +54,16 @@ const Projects = () => {
             repo.name !== "laravel-api-login-register" &&
             repo.name !== "chatFox-api"  &&
             repo.name !== "chatFox" &&
-            repo.name !== "react-docker-base" 
+            repo.name !== "react-docker-base" &&
+            repo.name !== "techguard-security-monitoring" &&
+            repo.name !== "php8-aws-lambda-runtime" &&
+            repo.name !== "pokedex" &&
+            repo.name !== "hamburguer-app" &&
+            repo.name !== "convert-money" &&
+            repo.name !== "wide-coverage" &&
+            repo.name !== "easy-shooping" &&
+            repo.name !== "instagram-clone" &&
+            repo.name !== "landing-page"
         );
 
         const sortedRepos = filteredRepos.sort(
