@@ -6,7 +6,7 @@ import Telegram from "../../assets/telegram.svg";
 import Linkedin from "../../assets/linkedin.svg";
 import LiveIcon from "../../assets/live.svg";
 import Repository from "../../assets/repo.svg";
-
+//
 import {
   Container,
   ProjectTitle,
@@ -52,7 +52,7 @@ const Projects = () => {
             repo.name !== "users-app" &&
             repo.name !== "laravel-10-teste" &&
             repo.name !== "laravel-api-login-register" &&
-            repo.name !== "chatFox-api"  &&
+            repo.name !== "chatFox-api" &&
             repo.name !== "chatFox" &&
             repo.name !== "react-docker-base" &&
             repo.name !== "techguard-security-monitoring" &&
