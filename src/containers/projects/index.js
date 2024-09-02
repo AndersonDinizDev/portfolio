@@ -64,7 +64,9 @@ const Projects = () => {
             repo.name !== "easy-shooping" &&
             repo.name !== "instagram-clone" &&
             repo.name !== "landing-page" &&
-            repo.name !== "login-page"
+            repo.name !== "login-page" &&
+            repo.name !== "hamburguer-api" &&
+            repo.name !== "banking-page"
         );
 
         const sortedRepos = filteredRepos.sort(
