@@ -66,7 +66,9 @@ const Projects = () => {
             repo.name !== "landing-page" &&
             repo.name !== "login-page" &&
             repo.name !== "hamburguer-api" &&
-            repo.name !== "banking-page"
+            repo.name !== "banking-page" &&
+            repo.name !== "magiictech-data-analysis-tool" &&
+            repo.name !== "magiic-document-management-system"
         );
 
         const sortedRepos = filteredRepos.sort(
