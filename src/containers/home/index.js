@@ -31,7 +31,7 @@ import FooterContent from "../../components/footer";
 import MediaButton from "../../components/mediabutton";
 import MainContent from "../../components/maincontent";
 import ButtonAnimated from "../../components/buttonanimated";
-import ParticlesComponent from "../../components/teste";
+// import ParticlesComponent from "../../components/teste";
 
 const Home = () => {
   // const [text] = useTypewriter({
