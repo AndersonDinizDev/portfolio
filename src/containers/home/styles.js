@@ -58,6 +58,7 @@ export const HomeContentH2 = styled.h2`
     font-size: 20px;
     text-align: left;
     line-height: 35px;
+    height: 150px;
 
     span {
       font-size: 17px;
