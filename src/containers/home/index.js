@@ -33,16 +33,16 @@ import MainContent from "../../components/maincontent";
 import ButtonAnimated from "../../components/buttonanimated";
 // import ParticlesComponent from "../../components/teste";
 
-const Home = () => {
-  const [text] = useTypewriter({
-    words: [
-      i18n.t("homeStatusCardTexts.text1"),
-      i18n.t("homeStatusCardTexts.text2"),
-    ],
-    loop: {},
-    typeSpeed: 50,
-    deleteSpeed: 50,
-  });
+// const Home = () => {
+//   const [text] = useTypewriter({
+//     words: [
+//       i18n.t("homeStatusCardTexts.text1"),
+//       i18n.t("homeStatusCardTexts.text2"),
+//     ],
+//     loop: {},
+//     typeSpeed: 50,
+//     deleteSpeed: 50,
+//   });
 
   const [text2] = useTypewriter({
     words: [
@@ -113,15 +113,15 @@ const Home = () => {
               </HomeContentLeft>
               <HomeRightContent>
                 <img src={Banner} alt="banner-img" />
-                <HomeWorkingInfo>
-                  <HomeRetangle></HomeRetangle>
-                  <p>
-                    {text}
-                    <span>
-                      <Cursor />
-                    </span>
-                  </p>
-                </HomeWorkingInfo>
+                // <HomeWorkingInfo>
+                //   <HomeRetangle></HomeRetangle>
+                //   <p>
+                //     {text}
+                //     <span>
+                //       <Cursor />
+                //     </span>
+                //   </p>
+                // </HomeWorkingInfo>
               </HomeRightContent>
             </HomeContent>
             <PhraseContent>
