@@ -70,13 +70,8 @@ const messages = {
         text2: "Desenvolvedor Back-end",
       },
       experiencesTexts: {
-        text1:
-          "Contribuo ativamente para o time de desenvolvimento e manutenção de aplicações Front-End e Back-End.",
-        text2: "Minhas responsabilidades incluem a implementação de novas funcionalidades e a manutenção da dashboard e backdoor da empresa, priorizando eficiência operacional e segurança.",
-        text3:
-          "Minha função abrange a criação e manutenção dos sistemas essenciais para a plataforma de localização, incluindo a configuração da API na nuvem.",
-        text4: "Dedico-me especialmente ao desenvolvimento de APIs confiáveis e seguras, assegurando o funcionamento eficaz da plataforma.",
-        text5: "Além disso, colaboro ativamente com a equipe para garantir a excelência contínua de nossos serviços de localização."
+        text1: "01/2024 - 09/2024",
+        text2: "08/2023 - Atualmente",
       },
       contactsTittle: {
         text: "Contatos",

@@ -70,16 +70,8 @@ const messages = {
         text2: "Back-end Developer",
       },
       experiencesTexts: {
-        text1:
-          "I actively contribute to the development and maintenance team of Front-End and Back-End applications.",
-        text2:
-          "My responsibilities include implementing new features and maintaining the company's dashboard and backdoor, prioritizing operational efficiency and security.",
-        text3:
-          "My role involves creating and maintaining the essential systems for the location platform, including configuring the API in the cloud.",
-        text4:
-          "I am particularly dedicated to the development of reliable and secure APIs, ensuring the effective functioning of the platform.",
-        text5:
-          "Additionally, I actively collaborate with the team to ensure the continuous excellence of our location services.",
+        text1: "01/2024 - 09/2024",
+        text2: "08/2023 - Present",
       },
       contactsTittle: {
         text: "Contacts",

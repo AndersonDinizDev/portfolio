@@ -6,7 +6,6 @@ import GitHub from "../../assets/github.svg";
 import Telegram from "../../assets/telegram.svg";
 import Linkedin from "../../assets/linkedin.svg";
 import AboutImage from "../../assets/my.png";
-import FunFacts from "../../assets/funfacts.svg";
 import SkillsImg from "../../assets/skillsimg.svg";
 import PhpImg from "../../assets/icons/php.svg";
 import JsImg from "../../assets/icons/javascript.svg";
@@ -24,10 +23,8 @@ import GtImg from "../../assets/icons/git.svg";
 import GhubImg from "../../assets/icons/github.svg";
 import MysImg from "../../assets/icons/mysql.svg";
 import ReactImg from "../../assets/icons/react.svg";
-import MagiicImg from "../../assets/logos/magiic.svg";
 import AwsImg from "../../assets/icons/aws.svg";
 import LaravelImg from "../../assets/icons/laravel.svg";
-import GenesisImg from "../../assets/logos/genesis.png";
 
 import {
   Container,
@@ -39,9 +36,6 @@ import {
   AboutContentRight,
   SkillsTitle,
   SkillsContent,
-  FunFactsTittle,
-  FunFactsContent,
-  FunFactsLeft,
   SkillsLeft,
   SkillsRight,
   Retangle,
@@ -325,50 +319,6 @@ const Contacts = () => {
                 </SkillsCard>
               </SkillsRight>
             </SkillsContent>
-            <FunFactsTittle>
-              <H1Animation bold="true">
-                <span>/</span>
-                {i18n.t("moreAboutMeTittle.text")}
-              </H1Animation>
-            </FunFactsTittle>
-            <FunFactsContent>
-              <FunFactsLeft>
-                <SkillsCard isfunfactscard="true">
-                  <img width="230px" src={GenesisImg} alt="genesis-img" />
-                  <P isfunfactsp="true" isspace="true">
-                    <span>#</span>
-                    {i18n.t("moreAboutMeTexts.text2")}
-                  </P>
-                  <P isfunfactsp2="true">
-                    <br />
-                    {i18n.t("experiencesTexts.text3")}
-                    <br />
-                    <br />
-                    {i18n.t("experiencesTexts.text4")}
-                    <br />
-                    <br />
-                    {i18n.t("experiencesTexts.text5")}
-                  </P>
-                </SkillsCard>
-                <SkillsCard isfunfactscard="true">
-                  <img width="230px" src={MagiicImg} alt="magiic-img" />
-                  <P isfunfactsp="true" isspace="true">
-                    <span>#</span>
-                    {i18n.t("moreAboutMeTexts.text1")}
-                  </P>
-                  <P isfunfactsp2="true">
-                    <br />
-                    {i18n.t("experiencesTexts.text1")}
-                    <br />
-                    <br />
-                    {i18n.t("experiencesTexts.text2")}
-                  </P>
-                </SkillsCard>
-              </FunFactsLeft>
-              <div>
-                <img id="funfacts-img" src={FunFacts} alt="funfacts-img" />
-              </div>
-            </FunFactsContent>
           </AboutContent>
         </MainContent>
       </ContainerItens>
