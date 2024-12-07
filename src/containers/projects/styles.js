@@ -10,7 +10,7 @@ export const ProjectContent = styled.div`
   display: flex;
   flex-direction: column;
   align-items: baseline;
-  width: 63%;
+  width: 100%;
 
   @media (max-width: 767px) {
     width: 100%;
@@ -93,7 +93,7 @@ export const GitHubInfo = styled.div`
 export const GitHubButtons = styled.div`
   display: flex;
   margin-top: 16px;
-  gap: 16px;
+  justify-content: center;
 `;
 
 export const GitHubList = styled.ul`

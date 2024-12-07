@@ -42,12 +42,13 @@ const Projects = () => {
         const response = await Api.get(
           "https://api.github.com/users/AndersonDinizDev/repos"
         );
-        const filteredRepos = response.data.filter(
-          (repo) =>
-            repo.name == "read-eazy" &&
-            repo.name == "timetrace-hub" &&
-            repo.name == "portfolio"
-        );
+        const filteredRepos = response.data.filter((repo) => {
+          return (
+            repo.name == "portfolio" ||
+            repo.name == "read-eazy" ||
+            repo.name == "timetrace-hub"
+          );
+         });
 
         const sortedRepos = filteredRepos.sort(
           (a, b) => new Date(b.created_at) - new Date(a.created_at)
@@ -117,10 +118,6 @@ const Projects = () => {
                       <H1 isgith1="true">{repository.name}</H1>
                       <P isgitp="true">{repository.description}</P>
                       <GitHubButtons>
-                        <Button href={repository.homepage} icon={LiveIcon}>
-                          {" "}
-                          {i18n.t("projectsButtonText.text1")}
-                        </Button>
                         <Button
                           href={repository.html_url}
                           buttonsize="true"
