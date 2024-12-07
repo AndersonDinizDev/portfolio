@@ -44,31 +44,9 @@ const Projects = () => {
         );
         const filteredRepos = response.data.filter(
           (repo) =>
-            repo.name !== "andersondinizdev" &&
-            repo.name !== "projects-thumbnail" &&
-            repo.name !== "users-api" &&
-            repo.name !== "platform-courses" &&
-            repo.name !== "clone-tabnews" &&
-            repo.name !== "users-app" &&
-            repo.name !== "laravel-10-teste" &&
-            repo.name !== "laravel-api-login-register" &&
-            repo.name !== "chatFox-api" &&
-            repo.name !== "chatFox" &&
-            repo.name !== "react-docker-base" &&
-            repo.name !== "techguard-security-monitoring" &&
-            repo.name !== "php8-aws-lambda-runtime" &&
-            repo.name !== "pokedex" &&
-            repo.name !== "hamburguer-app" &&
-            repo.name !== "convert-money" &&
-            repo.name !== "wide-coverage" &&
-            repo.name !== "easy-shooping" &&
-            repo.name !== "instagram-clone" &&
-            repo.name !== "landing-page" &&
-            repo.name !== "login-page" &&
-            repo.name !== "hamburguer-api" &&
-            repo.name !== "banking-page" &&
-            repo.name !== "magiictech-data-analysis-tool" &&
-            repo.name !== "magiic-document-management-system"
+            repo.name == "read-eazy" &&
+            repo.name == "timetrace-hub" &&
+            repo.name == "portfolio"
         );
 
         const sortedRepos = filteredRepos.sort(
